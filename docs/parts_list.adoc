@@ -8,30 +8,30 @@ Parts needed to build 2 Pay tray and 1 PI Cluster frame (which holds 2 PI's)
 Note: List is provided AS IS. List may contain errors.
 
 === Hardware
-8x M2.5 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT
-18x M3 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT
-8x M2.5x25
-14x M3x5
-8x M3x10
-8x M3x14 
-8x M3 nut
+- 8x M2.5 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT
+- 18x M3 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT
+- 8x M2.5x25
+- 14x M3x5
+- 8x M3x10
+- 8x M3x14 
+- 8x M3 nut
 
 ==PCBs
-2x PI Cluster HAT
-2x PowerBoard 
-2x LEDBoard
+- 2x PI Cluster HAT
+- 2x PowerBoard 
+- 2x LEDBoard
 
 ===Electronic Components (Minimal components)
-6x RGB LED 5MM
-18x SMD 0805 330 Ohm resistor
-2x SMD SOT-23 NDS351N Logic Level Mosfet
-2x Litle Fuse  SMD 1206
-2x 1x 25x25 5V FAN with 2 pins JST XH 2.54 connector 
-2x JST XH 2.54 10 PINS connector
-4x JST XH 2.54 2 PINS connector
-2x JST XH 2.54 90 degree angel JST XH 2.54 10 pins connector + 10CM cable (pre crimped)
-2x JST XH 2.54 straight JST XH 2.54 2 pins connector + 10CM cable (pre crimped)
-2x SparkFun GPIO 2x20 Female header
+- 6x RGB LED 5MM
+- 18x SMD 0805 330 Ohm resistor
+- 2x SMD SOT-23 NDS351N Logic Level Mosfet
+- 2x Litle Fuse  SMD 1206
+- 2x 1x 25x25 5V FAN with 2 pins JST XH 2.54 connector 
+- 2x JST XH 2.54 10 PINS connector
+- 4x JST XH 2.54 2 PINS connector
+- 2x JST XH 2.54 90 degree angel JST XH 2.54 10 pins connector + 10CM cable (pre crimped)
+- 2x JST XH 2.54 straight JST XH 2.54 2 pins connector + 10CM cable (pre crimped)
+- 2x SparkFun GPIO 2x20 Female header
 
 NOTE: Recently the NDS331N became obsolete. Replacement: SSM3K344R, package is different (SOT-23F-3). Same footprint as SOT23
 
@@ -40,17 +40,18 @@ One PI cluster Frame holds 2 PI trays
 
 
 === Hardware
-12x M3 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT
-4x M3x10
-4x M3x25
-4x M3 threaded rod length based on the number of PI frames. Max 19" for 5 PI frames (10 nodes)
-                   (For 1 PI frame to hold 2 PI nodes length is +/- 90mm)
+- 12x M3 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT
+- 4x M3x10
+- 4x M3x25
+- 4x M3 threaded rod 
+
+Note: rod length based on the number of PI frames. Max 19" for 5 PI frames (10 nodes) For 1 PI frame (which holds 2 PI nodes) rod length is +/- 90mm
 
 PCBs
 =====
-1x Backplane
+- 1x Backplane
 
 Electronic Components 
 ======================
-2x 2x3 male header 
-Enough thick isolated copper wire to connect the backplane + 5V power supply
+- 2x 2x3 male header 
+- Enough thick isolated copper wire to connect the backplane + 5V power supply
