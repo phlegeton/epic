@@ -8,7 +8,8 @@ In the tools directory you find tools which may be handy during assembly.
 
 WARNING:
 
-** Current this project is in active development which means that: **
+**Current this project is in active development** 
+which means that:
 
 The design is still changing, and there are still a couple of problems.
 
