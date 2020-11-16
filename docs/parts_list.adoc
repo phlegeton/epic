@@ -16,12 +16,12 @@ Note: List is provided AS IS. List may contain errors.
 - 8x M3x14 
 - 8x M3 nut
 
-==PCBs
+== PCBs
 - 2x PI Cluster HAT
 - 2x PowerBoard 
 - 2x LEDBoard
 
-===Electronic Components (Minimal components)
+=== Electronic Components (Minimal components)
 - 6x RGB LED 5MM
 - 18x SMD 0805 330 Ohm resistor
 - 2x SMD SOT-23 NDS351N Logic Level Mosfet
@@ -47,11 +47,9 @@ One PI cluster Frame holds 2 PI trays
 
 Note: rod length based on the number of PI frames. Max 19" for 5 PI frames (10 nodes) For 1 PI frame (which holds 2 PI nodes) rod length is +/- 90mm
 
-PCBs
-=====
+== PCBs
 - 1x Backplane
 
-Electronic Components 
-======================
+=== Electronic Components 
 - 2x 2x3 male header 
 - Enough thick isolated copper wire to connect the backplane + 5V power supply
