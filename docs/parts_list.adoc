@@ -1,3 +1,10 @@
+ifdef::env-gitlab[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
 = Complete Parts list
 Hades <hades@spacebugs.nl>
 v1.0, 2020-16-11
