@@ -47,7 +47,7 @@ One PI cluster Frame holds 2 PI trays
 
 Note: rod length based on the number of PI frames. Max 19" for 5 PI frames (10 nodes) For 1 PI frame (which holds 2 PI nodes) rod length is +/- 90mm
 
-== PCBs
+=== PCBs
 - 1x Backplane
 
 === Electronic Components 
