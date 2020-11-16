@@ -1,12 +1,13 @@
-____________
-|1x PI Tray|
-------------
+= Complete Parts list
+Hades <hades@spacebugs.nl>
+v1.0, 2020-16-11
+ 
+== PI Tray
 Parts needed to build 2 Pay tray and 1 PI Cluster frame (which holds 2 PI's)
 
 Note: List is provided AS IS. List may contain errors.
 
-Hardware
-=========
+=== Hardware
 8x M2.5 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT
 18x M3 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT
 8x M2.5x25
@@ -15,14 +16,12 @@ Hardware
 8x M3x14 
 8x M3 nut
 
-PCBs
-=====
+==PCBs
 2x PI Cluster HAT
 2x PowerBoard 
 2x LEDBoard
 
-Electronic Components (Minimal components)
-===========================================
+===Electronic Components (Minimal components)
 6x RGB LED 5MM
 18x SMD 0805 330 Ohm resistor
 2x SMD SOT-23 NDS351N Logic Level Mosfet
@@ -36,12 +35,11 @@ Electronic Components (Minimal components)
 
 NOTE: Recently the NDS331N became obsolete. Replacement: SSM3K344R, package is different (SOT-23F-3). Same footprint as SOT23
 
-__________________________________________
-|1x PI Cluster Frame (to hold 2 PI trays)|
-------------------------------------------
+== 1x PI Cluster Frame 
+One PI cluster Frame holds 2 PI trays
 
-Hardware
-=========
+
+=== Hardware
 12x M3 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT
 4x M3x10
 4x M3x25
