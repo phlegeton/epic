@@ -1,0 +1,18 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+= Design Goals 
+Hades <hades@spacebugs.nl>
+v1.0, 2020-17-11
+
+== Design goals
+
+The cluster frame is designed with the idea of being as modulair as possible. This means that the minimal frame size is just for 2 nodes. This frame can then easily be extended into 4,6,8 or 10 pi's max if the frame needs to be 19" mountable. It's easy to stack 10 rows on Pi's in a rack. When extending the frame to more then 10 Pi's I'm not sure if the frame is strong enough to do this. 
+
+That brings me to the second design goal: The whole design needs to be free to everyone who wants to build it, and it must be possible for everyone to adjust it to one needs. 
+
+So this frame is ideal if you want to stack some PI's together. However if you need access to the GPIO pins, this frame might not be for you. The  GPIO pins are covered by a HAT which enables the PI cluster node to have proper cooling, and allows for three RGB leds. This frame intended use is for housing a PI cluster. And normally in a cluster setup the GPIO pins are not used. (in this case some of them are, for controlling RGB status LED's and a FAN for cooling).
