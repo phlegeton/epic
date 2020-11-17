@@ -1,0 +1,45 @@
+:imagesdir: assets/images 
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+= Design Goals
+Hades <hades@spacebugs.nl>
+v1.0, 2020-18-10
+
+== Building the PI Cluster HAT
+The PI Cluster HAT PCB contains SMD parts and also Through Hole parts. It may require some skills to solder the SMD parts, but it shouldn't be too hard to do, since the SMD package size is rather large. 
+
+Per PCB you need: 
+
+- 9x 330 Ohm resistor
+- 1x 2 Amp SMD fuse
+- 2x 10 pins JST XH cable connectors (these are available already crimped to a cable)
+- 1x N-Channel IZ644 MOSFET
+- 1x 40 pins GPIO header
+
+Depending on how you connect everything to the PI Cluster HAT:
+
+- Solder the wires directly onto the PCB
+- Use conenctors
+
+When using connectors you need the following:
+
+- 1x  10 pins JST XH 90 degree angle PCB connector
+- 2x 2 pins JST XH 90 degree angle PCB connector
+- 1x 6 pins box header
+
+The pro of soldering the wires directly to the PCB is the low profile. The downside is of course that when removing or when needing to replace a part, the wires needs to be desoldered. 
+
+When using connectors, all the connections can easly be disconnected. Which makes maintanance much easier. However, it costs more.
+
+Whichever solution you choose, it doens't matter, as long as the profile of the PCB is as low as possible.
+
+image::pichatas.jpg[Components needed for PCB assembly]
+
+WARNING: During development version straight JST XH headers where used. In production **DON'T USE** straight connectors, since they prevent the tray from sliding in and out the cluster frame. 
+
+When soldering the PCB start with the smallest componets. So first solder the resistors, the and the other SMD components. Next solder the connectors (if you choose to use connectors). Solder the 2x20 GPIO header as last part. Make sure the GPIO hader is straight, and in a 90 degree angle to the board. 
