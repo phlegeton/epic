@@ -1,0 +1,39 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+= Introduction 
+Hades <hades@spacebugs.nl>
+v1.0, 2020-16-11
+
+== Introduction
+Having some Raspberry PI's at your disposal is already fun. Turning them into a cluster is really fun. Well.. I think it's fun. A few years back a friend and I came to the elusive idea of building a 10 node cluster. We had our reasons to do so. The first and most obvious reason is of course to have fun. The other reasons were about learning something about clusters, software deployment on a cluster. 
+
+At that time this friend got a 3D printer, so he started to design and print a frame which could hold 10 Pi's. And one day he stopped by dropping of the PI's. The idea was to link those 2 set's of PI's together over a VPN, and we would have access to a 20 node cluster, in two separate geographic locations. How cool is that ?
+
+We played around with it for a while, starting to configure the infrastructure needed to manage the cluster, and started to deploy software on the cluster. There was however one thing we needed to address. And that was the cooling of the cluster. Long story short: we find ourselves in busy day jobs, no time to spend on the cluster, and slowly the cluster, and the idea disappeared on a shelf. As it so often happens. 
+
+Till recently. Due to some new challenges I needed an environment of a couple of physical hosts. Something that would scale.. I needed a cluster. And yes I got one, but for the tasks I had in mind, I needed to fix the cooling issue. So after I tried to alter the current frame I soon discovered that I needed or to alter the original design, or started from scratch. 
+
+Starting from scratch was not something I wanted to simply do. For good reasons: I needed a cluster quickly. Second, designing from scratch means a lot of work, and I already got a lot of projects on my hands. There was one thing however, and that's this idea I have for a really long time. And now I have the opportunity to realise this idea. This idea is to design some kind of backplane I could plug the PI's into. I have for some reason (and don't ask my why) a fascination for backplanes. 
+
+Long story short I started on the 5th of june 2020 to design a cluster frame that would: 
+
+- Makes it possible to easy swap PI's
+- Easy to maintain
+- Simple to build
+- Hold 10 PI's in a 19" rack
+
+I had a lot of more requirements, but these were the essential ones.  During the development of this cluster frame I learned a lot. One of the things I needed to guard myself against was the phenomenon I like to call "feature creeps". Once I start designing it's oh so tempting to put in every possible thing that makes the project more feature rich, and of course all those features are "must haves". So right from the start I created a "requirements document". It's a few pages long, but in essence I could rewrite the whole document into one sentence:  
+
+"Don't allow for any feature / aspect to slow the project down, or prevent it from coming up with a working proof of concept (PoC".  
+
+And even with this document, it's hard to put great ideas aside, or even to improve the design into prefection.  
+
+But eventually I managed to just move forward, and even when somethings aren't perfect, or even won't work as intended I build a PoC in less then 3 months. Spending most of my evening and weekend to design and build. 
+
+NOTE: This document describes the first development version. It's far from complete, and may not even be useful to anyone. 
+
