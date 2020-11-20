@@ -1,0 +1,69 @@
+:imagesdir: assets/images
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+= Features PI Cluster HAT 
+Hades <hades@spacebugs.nl>
+v1.0, 2020-20-11
+
+== Featues of the PI Cluster HAT
+The PI Cluster HAT provides the following features:
+
+- 1x GPIO PWM Controllable FAN
+- 3x GPIO PWM Controllable RGB LED's
+- 5V Power Distribution
+- 3V Power Distribution
+- 1x Programmable I2C EPROM
+- 1x I2C Breakout
+
+=== PI Cluster HAT Theory of Operation
+This section explains the features of the PI Cluser HAT in more detail.
+
+The PI Cluster HAT is designed with the PI HAT regulations and requirements in mind. However, some requirements are not met. In this section, this is addressed as well.
+
+The PI CLuster HAT main purpose is to provide a PWM Controlled cooling FAN which is placed just above the Raspberry PI CPU, so the CPU is cooled in a very efficient way. 
+
+=== Cooling FAN
+The FAN is connected by a N-CHANNEL MOSFET to BCM pin 18. Which makes it possible to control the cooling FAN easily by software.  By using PWM the FAN speed can be controlled. This allows efficient cooling, reduces power consumption, and hopefully less FAN noise. 
+
+To protect the MOSFET a fly-back diode can be added. However during testing, this seems not required. 
+
+=== 5V Power
+The second most important task of the PI Cluster HAT is to distribute power to the PowerBoard, making it possible to connected a Raspberry PI to a back-plane.
+
+The PI HAT design rules, require a polarity protection diode. This diode is not implemented for the following reasons:
+
+- The PI CLuster HAT is mounted on a PI Tray, which is placed inside a Cluster frame, the power pins are not accessible.
+- A Diode will cause a voltage drop, even when using a Schottky diode, which is problematic when distributing 5V across a back-plane
+
+The only risk of damage the Raspberry PI by reversing the 5V polarity, is when:
+
+- Testing the PI node outside the cluster frame.
+- When the power board or power wires are assembled incorrectly.
+
+However a power drop of more then 0.2V, can cause instability problems, rendering each cluster node useless. To provide some protection, the + 5V power line is protected by a 63V 2A fuse.
+
+
+=== GPIO Features
+Futhermore the PI Cluster HAT provides a means of using some of the GPIO pins/features, which normally won't be accessible once the Raspberry PI is inside the cluster frame. 
+
+==== 3x software PWM controllable RGB LED's
+By providing 3 RGB LED's which are PWN software driven, it's easy to control these RGB LED's from software as status LED's.
+The RGB LED's can for instance be used as a power on LED, Temperature status, or any other status.
+
+The PI Cluster HAT Provides current limiting resistors, to protect the GPIO PIN's and the RGB LED's as well.
+
+==== I2C feature
+The Cluster PI HAT also provides a one breakout I2C connector, so the for each node the I2C bus can be used, since the I2C bus interconnects on the back-plane.
+
+==== I2C EEPROM
+The Raspberry PI provides separate I2C GPIO pins to control a I2C EEPROM, this EEPROM is included as well. 
+
+The EEPROM has the required pull down reisistors, as well as test points to control the Read and Write (R/W) signals.
+
+NOTE: At this moment the EPROM and I2C functionality is not fully tested, and implemented.
+
