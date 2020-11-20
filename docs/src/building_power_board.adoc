@@ -1,0 +1,31 @@
+:imagesdir: assets/images
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+= Building Power Board 
+Hades <hades@spacebugs.nl>
+v1.0, 2020-20-11
+
+== Building the PowerBoard
+Materials needed:
+
+- 1x Power Board PCB
+- 2x 2x3 female 2.54 pitch connectors
+- 1x JST XH 254 connector
+- 1x Black wire 
+- 1x Red wire
+- 2x JST crimp connectors
+- 1x Connector template
+- 1x Crimp tool the crimp the JST XH 2.54 connector
+
+NOTE: The JST XT 2.54 connectors can be bought pre-crimped. However the copper pairs, or most likely to be very thin, causing a severe power drop.
+
+TIP: Before assembly make sure to print the alignment tool from the extra folder. This tools helps aligning the connectors, and makes soldering more easily.
+
+image::pbas.jpg[Components needed for PCB assembly]
+
+
