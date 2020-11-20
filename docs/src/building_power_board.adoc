@@ -28,4 +28,8 @@ TIP: Before assembly make sure to print the alignment tool from the extra folder
 
 image::pbas.jpg[Components needed for PCB assembly]
 
+Use the alignment tool to align the connectors
+
+image::pbalt.jpg[Components needed for PCB assembly]
+
 
