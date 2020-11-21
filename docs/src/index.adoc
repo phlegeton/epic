@@ -1,0 +1,24 @@
+:safe-mode-level: 0
+:imagesdir: assets/images
+:includesdir: include
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+= Main Index 
+Hades <hades@spacebugs.nl>
+v1.0, 2020-21-11
+include::./{includesdir}/document_settings.adoc[]
+
+:toc: right
+
+== Introduction
+include::introduction.adoc[]
+include::design_goals.adoc[]
+include::Features_power_board.adoc[]
+include::building_power_board.adoc[]
+include::Features_PI_Cluster_hat.adoc[]
+include::building_cluster_frame.adoc[]
