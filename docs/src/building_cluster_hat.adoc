@@ -1,4 +1,5 @@
 :imagesdir: assets/images 
+:includesdir: include
 ifdef::env-github[]
 :tip-caption: :bulb:
 :note-caption: :information_source:
@@ -9,6 +10,7 @@ endif::[]
 = Design Goals
 Hades <hades@spacebugs.nl>
 v1.0, 2020-18-10
+include::./{includesdir}/document_settings.adoc[]
 
 == Building the PI Cluster HAT
 The PI Cluster HAT PCB contains SMD parts and also Through Hole parts. It may require some skills to solder the SMD parts, but it shouldn't be too hard to do, since the SMD package size is rather large. 

@@ -1,4 +1,6 @@
+:safe-mode-level: 0
 :imagesdir: assets/images
+:includesdir: include
 ifdef::env-github[]
 :tip-caption: :bulb:
 :note-caption: :information_source:
@@ -9,10 +11,12 @@ endif::[]
 = Building cluster frame 
 Hades <hades@spacebugs.nl>
 v1.0, 2020-20-11
-
-
+include::./{includesdir}/document_settings.adoc[]
 
 == Building the frame 
+
+Written by {firstname}
+
 To build 1 cluster frame, the following is needed:
 
 - 1x backplate
@@ -29,7 +33,9 @@ The first step is to 3D print all the parts. When building a frame for 10 nodes 
 
 The 3D printed parts needed are shown in the picture below:
 
-image::cras.jpg[Components needed for PCB assembly]
+image::cras.jpg["Buildimage",{fullWidth},{fullHeight}]
+
+The attribute fullWidth is set to {fullWidth}
 
 NOTE: During development a back-plane shim is used. This will no longer be needed in production.
 

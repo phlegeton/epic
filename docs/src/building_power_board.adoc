@@ -1,4 +1,5 @@
 :imagesdir: assets/images
+:includesdir: include
 ifdef::env-github[]
 :tip-caption: :bulb:
 :note-caption: :information_source:
@@ -9,6 +10,7 @@ endif::[]
 = Building Power Board 
 Hades <hades@spacebugs.nl>
 v1.0, 2020-20-11
+include::./{includesdir}/document_settings.adoc[]
 
 == Building the PowerBoard
 Materials needed:
@@ -30,6 +32,6 @@ image::pbas.jpg[Components needed for PCB assembly]
 
 Use the alignment tool to align the connectors
 
-image::pbalt.jpg[Components needed for PCB assembly]
+image::pbalt.jpg[Components needed for PCB assembly][width=246]
 
 

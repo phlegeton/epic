@@ -1,0 +1,2 @@
+:fullWidth: 245
+:fullHeight: 150 
