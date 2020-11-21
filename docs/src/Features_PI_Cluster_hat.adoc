@@ -7,7 +7,6 @@ ifdef::env-github[]
 :caution-caption: :fire:
 :warning-caption: :warning:
 endif::[]
-= Features PI Cluster HAT 
 Hades <hades@spacebugs.nl>
 v1.0, 2020-20-11
 

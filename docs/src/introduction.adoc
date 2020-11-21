@@ -6,7 +6,7 @@ ifdef::env-github[]
 :caution-caption: :fire:
 :warning-caption: :warning:
 endif::[]
-= Introduction 
+
 Hades <hades@spacebugs.nl>
 v1.0, 2020-16-11
 
