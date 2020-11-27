@@ -1,0 +1,53 @@
+:safe-mode-level: 0
+:imagesdir: assets/images
+:includesdir: include
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+= Building cluster frame 
+Hades <hades@spacebugs.nl>
+v1.0, 2020-20-11
+include::./{includesdir}/document_settings.adoc[]
+
+== Preparing the PI Tray
+The PI Tray is responsible for holding several components:
+
+- The Raspberry PI itself
+- The PI Cluster HAT + cooling FAN
+- The Power board 
+- The LED board
+- The front plate
+- The front bezel 
+
+To coop with all of this, the PI tray needs the be prepared by inserting some brass press inserts.
+There are several options:
+
+- Use 4x M2.5 brass press inserts to mount the Raspberry PI
+- Use 7x M3 brass press inserts to mount the rest of the components
+
+or:
+
+- Use M2.5 brass inserts for every thing. 
+
+Both options will work, as long the brass press inserts require a hole of +/- 4mm (And they should)
+
+In this document the puristic path is chosen, just because this is how the design was intended. 
+
+image::pitp1.jpg["Buildimage",{fullWidth},{fullHeight}]
+
+The easiest way of prepare the PI Tray is to start with the M2.5 brass inserts, by inserting them into the 4 holes and press them in the four holes by using a hot soldering iron. 
+
+Next the M3 brass inserts can be inserted. Make sure not to melt the PLA when inserting the brass press inserts for the power board. And alo keep in mind, the brass press inserts for the LED board are inserted from the front. Trying to this the other way around, will for sure damage the PI Tray beyond any repair. 
+
+image::pitp2.jpg["Buildimage",{fullWidth},{fullHeight}]
+
+TIP: Use a long screw (for example a M3x20mm) to position the brass press inserts. Just insert the screw one thread, so the screw can be easily removed.
+
+image::pitp3.jpg["Buildimage",{fullWidth},{fullHeight}]
+
+
+
