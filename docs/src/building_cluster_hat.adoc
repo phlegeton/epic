@@ -54,7 +54,7 @@ Next solder the JST XH 2.54 haeders onto the PCB
 image::pihatascnt.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
 
 
-As a last step solder the 6 pins 2.54mm header, and then the as the last component the 2x20 GPIO pin header at the other side of the PCB
+As a last step solder the 6 pins 2.54mm header, and then the as the last component the 2x20 GPIO pin header at the other side of the PCB. The final PCB is shown below. In a last step the FLUX must be cleaned up from the PCB. But apart from that, this is how the finished PCB should look like.
 
 image::pihataslcnt.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
 
