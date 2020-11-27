@@ -10,7 +10,7 @@ ifdef::env-github[]
 endif::[]
 = Main Index 
 Hades <hades@spacebugs.nl>
-v1.0, 2020-21-11
+v1.0, 2020-28-11
 include::./{includesdir}/document_settings.adoc[]
 
 :toc: right
@@ -18,7 +18,9 @@ include::./{includesdir}/document_settings.adoc[]
 == Introduction
 include::introduction.adoc[]
 include::design_goals.adoc[]
+include::preparing_pi_tray.adoc[]
 include::Features_power_board.adoc[]
 include::building_power_board.adoc[]
 include::Features_PI_Cluster_hat.adoc[]
+include::building_cluster_hat.adoc[]
 include::building_cluster_frame.adoc[]

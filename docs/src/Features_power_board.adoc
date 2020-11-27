@@ -7,9 +7,6 @@ ifdef::env-github[]
 :caution-caption: :fire:
 :warning-caption: :warning:
 endif::[]
-= Features power board 
-Hades <hades@spacebugs.nl>
-v1.0, 2020-20-11
 
 == Features of the Power Board
 The power board PCB provides the following features on a small footprint:
@@ -19,7 +16,6 @@ The power board PCB provides the following features on a small footprint:
 - I2C to backplane connection
 - Low voltage drop
 - Rated for 2 Ampere 
-
 
 === Theory of operation
 The power board contains 2x female 2x3 headers which allows 5V distribution to the back-plane on one 2x3 connector, and the 2x3 connector allows for I2C connection and 3V power distribution. The Power board doesn't contain any active or passive components, other then tw 2x3 female connectors. 

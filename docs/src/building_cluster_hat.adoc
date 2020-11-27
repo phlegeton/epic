@@ -7,9 +7,6 @@ ifdef::env-github[]
 :caution-caption: :fire:
 :warning-caption: :warning:
 endif::[]
-= Design Goals
-Hades <hades@spacebugs.nl>
-v1.0, 2020-18-10
 include::./{includesdir}/document_settings.adoc[]
 
 == Building the PI Cluster HAT
