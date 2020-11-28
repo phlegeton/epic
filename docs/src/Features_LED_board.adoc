@@ -1,0 +1,15 @@
+:imagesdir: assets/images
+:includesdir: include
+
+== Featues of the LED Board
+The LED Board provides the following features:
+
+- 3x RGB LED on a small PCB
+- Easy connection to the PI Cluster HAT by using one JST XH 10 pins female connector 
+- One common GND PIN for easy controlling the RGB LED's and save precious space on the PI Cluster HAT
+- Easy and solid attachment to PI Tray
+
+=== Theory of Operation
+The LED Board holds 3 Common Cathode RGB LED's on a small PCB. The RGB LED's share a common GND. This reduces the number of connections needed from 12 connections to 10 connections, which save space on the PI Cluster HAT, and also save on the number of wires. 
+
+NOTE: The silkscreen on the PCB has no GND or (-) marking. This is fixed in the next version of the PCB. The pin closest to the silkscreen marking "J1" is the common GND pin.
