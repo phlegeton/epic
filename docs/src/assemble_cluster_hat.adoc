@@ -1,4 +1,4 @@
-== Building the PI Cluster HAT
+== Assemble the PI Cluster HAT
 :imagesdir: assets/images 
 :includesdir: include
 include::./{includesdir}/document_settings.adoc[]
