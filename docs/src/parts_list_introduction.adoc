@@ -1,0 +1,22 @@
+== Parts List introduction
+The complete parts lists contains per main components the parts needed. 
+The main components of the PI Cluster frame are:
+
+- PI Cluster Frame
+- PI Tray
+
+Per main components the list is divided into 
+
+- Hardware 
+- PCB
+- Electronic parts needed. 
+
+The lists contains all the parts which are needed to build the intended design. However, the design is modular and flexible. Which means there are more then one way to build the PI cluster frame.
+
+For example: 
+
+- Not using any connectors, and solder the wires directly to the PCB's. 
+- Instead of using M2.5 screws, M3 screws can be used, by filing out the Raspberry PI mounting holes. 
+- Instead of using M2.5x25mm bolts, M2.5 stand-offs with screws can be used to mounbt the PI Cluster HAT onto the Raspberry PI
+
+The complete parts list however doesn't take these variants into account. 

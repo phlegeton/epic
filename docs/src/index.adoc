@@ -24,3 +24,6 @@ include::building_power_board.adoc[]
 include::Features_PI_Cluster_hat.adoc[]
 include::building_cluster_hat.adoc[]
 include::building_cluster_frame.adoc[]
+include::parts_list_introduction.adoc[]
+include::complete_parts_list.adoc[]
+

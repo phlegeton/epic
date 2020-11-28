@@ -5,14 +5,11 @@ ifdef::env-github[]
 :caution-caption: :fire:
 :warning-caption: :warning:
 endif::[]
-= Complete Parts list
-Hades <hades@spacebugs.nl>
-v1.0, 2020-16-11
- 
-== PI Tray
-Parts needed to build 2 Pay tray and 1 PI Cluster frame (which holds 2 PI's)
 
 NOTE: List is provided AS IS. List may contain errors.
+
+== PI Tray
+Parts needed to build 2 Pay tray's and 1 PI Cluster frame (which holds 2 PI's)
 
 === Hardware
 - 8x M2.5 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT
@@ -23,14 +20,20 @@ NOTE: List is provided AS IS. List may contain errors.
 - 8x M3x14 
 - 8x M3 nut
 
-== PCBs
-- 2x PI Cluster HAT
-- 2x PowerBoard 
-- 2x LEDBoard
+=== PCBs
+- 2x Fully assembled PI Cluster HAT
+- 2x Fully assembled PowerBoard 
+- 2x Fully assembled LEDBoard
 
-=== Electronic Components (Minimal components)
-- 6x RGB LED 5MM
+
+== PI Cluster HAT
+Parts needed to assemble 2x PI Cluster HAT
+
+=== Electronic Components
 - 18x SMD 0805 330 Ohm resistor
+- 2x SMD 0805 1K Ohm resistor
+- 4x SMD 0805 3.9K Ohm resistor
+- 2x SMD SOIC-8 CAT24C32 EEPROM
 - 2x SMD SOT-23 NDS351N Logic Level Mosfet
 - 2x Litle Fuse  SMD 1206
 - 2x 1x 25x25 5V FAN with 2 pins JST XH 2.54 connector 
@@ -42,9 +45,32 @@ NOTE: List is provided AS IS. List may contain errors.
 
 NOTE: Recently the NDS331N became obsolete. Replacement: SSM3K344R, package is different (SOT-23F-3). Same footprint as SOT23
 
+=== PCB
+
+- 2x PI Cluster HAT PCB
+
+== Power Board
+Parts needed to build 2 Power Boards
+
+- 4x 2x3 rows 2.54 pitch female header
+- 2x Pre-crimped JST XHT 2.54mm connector 
+
+=== PCB
+
+- 2x Power Board PCB
+
+== LED Board
+Parts needed to build 2 LED Boards:
+
+- 6x RGB LED 5MM
+- 2x JST XHT 2.54 10 pins connector pre-crimped.
+
+=== PCB
+
+2x LED Board PCB
+
 == 1x PI Cluster Frame 
 One PI cluster Frame holds 2 PI trays
-
 
 === Hardware
 - 12x M3 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT
