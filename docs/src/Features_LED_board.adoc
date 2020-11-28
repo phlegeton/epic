@@ -13,3 +13,4 @@ The LED Board provides the following features:
 The LED Board holds 3 Common Cathode RGB LED's on a small PCB. The RGB LED's share a common GND. This reduces the number of connections needed from 12 connections to 10 connections, which save space on the PI Cluster HAT, and also save on the number of wires. 
 
 NOTE: The silkscreen on the PCB has no GND or (-) marking. This is fixed in the next version of the PCB. The pin closest to the silkscreen marking "J1" is the common GND pin.
+
