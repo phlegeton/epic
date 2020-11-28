@@ -1,19 +1,9 @@
-:safe-mode-level: 0
-:imagesdir: assets/images
-:includesdir: include
-ifdef::env-github[]
-:tip-caption: :bulb:
-:note-caption: :information_source:
-:important-caption: :heavy_exclamation_mark:
-:caution-caption: :fire:
-:warning-caption: :warning:
-endif::[]
-= Building cluster frame 
-Hades <hades@spacebugs.nl>
-v1.0, 2020-20-11
-include::./{includesdir}/document_settings.adoc[]
+
 
 == Preparing the PI Tray
+:imagesdir: assets/images
+:includesdir: include
+include::./{includesdir}/document_settings.adoc[]
 The PI Tray is responsible for holding several components:
 
 - The Raspberry PI itself
