@@ -1,6 +1,6 @@
 
 
-== Building the PowerBoard
+== Assemble the PowerBoard
 :imagesdir: assets/images
 :includesdir: include
 include::./{includesdir}/document_settings.adoc[]
