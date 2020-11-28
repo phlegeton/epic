@@ -1,0 +1,98 @@
+== Assemble the LED Board
+:imagesdir: assets/images
+:includesdir: include
+include::./{includesdir}/document_settings.adoc[]
+
+The assembly of the LED Board is perhaps the most tricky one. Since space on the LED Board is quite limited, the footprint of the RGB LED's are somewhat "spaced close together". You get this when trying to solder the RGB LED's, without trying to bridge the pins together. 
+
+To assemble the LED Board, the following is needed:
+
+- 1x LED board
+- 3x RGB LED
+- 1x Solder helper tool (Trust me, you really want to 3D print this tool and actually use it)
+- 1x (pre) crimped JST XH 10 pins 2.54 female connector 
+
+image::asrgblb.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+=== Placing the RGB LED's
+The first and most important thing is to insert the RGB LED's in the right orientation. The next image is demonstrating this:
+
+image::rgb_led_orientation.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+Another way of looking at this is: On the PCB the LED markings have an open spot, the flat side of the RGB should be at this opening:
+
+image::rgblb.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+After determine the right orientation of the RGB LED's insert them into the LED board:
+
+image::rgb_ilb.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+=== Using the soldering helper tool
+
+Add this point, you should have 3D printed the solder helper tool. Place the LED Board PCB as follows in the solder helper tool:
+
+NOTE: To align the RGB flat with the PCB, there is only one way of inserting the PCB correctly into the solder helper tool
+
+image::rgb_pcb_ht.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+As you can see from the picture, it may help to cut the RGB LED's legs short, to make soldering even easier.
+
+Once the PCB is inserted correctly, and the RGB LED's are flat with the PCB surface, solder all the legs of the RGB LED's without bridging them. 
+
+TIP: To prevent bridging, use 0.5mm tin. And if pins are bridge, cut the legs short as possible and use solder wick to suck away the tin.
+
+=== Soldering the wires onto the LED Board
+
+Once all the RGB LED's are soldered, time to cut the the wire to length, by cutting the 10 string cable at at a length of 9.5CM. Make sure the guiding pins on the connector face upwards:
+
+image::asrgbcbl.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+Next pull apart the 10 strings for about 3CM, and cut off +/- 0.5CM of isolation, to expose the bare copper wires. 
+
+To make inserting the 10 wires into the PCB easier, tin the wires lightly. This is best done by using 0.5mm soldering tin, and clean the solder iron tip after each wire, to loosen the extra tin, preventing it going onto the next wire. 
+
+Take your time to tin the wires lightly. When to much tin is applied to the wires, they may become to thick to be inserted into the holes on the LED Board PCB.
+
+==== Insert the wires with the correct orientation
+Once the wires are tinned, insert the 10 wires onto the back of the LED Board PCB. When inserting the wires make sure that the orientation is correct. The next image shows an complete assembled RGB LED Board, and notice the orientation of the connector: 
+
+The guide lines thingy on the connector is facing upward, while on the LED Board the wire connections are on the bottom.
+
+image::rgb_cbl_orientation.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+Looking at the image above, the GND (common) pin is on the left. 
+
+Once the wires are inserted, the soldering helper tool can help by making it more easy to soldering the wires:
+
+image::srgblwht.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+It may be tricky to insert the wires, and make sure they stay inserted into the PCB while placing the PCB into the helper tool. 
+
+TIP: It may help to solder the first two or three wires "by hand", and then inserting the wires into the PCB, and placing the PCB carefully into the helper tool. By soldering the first wires, it may help to keep the wires into position. 
+
+=== Testing the LED Board
+
+Once the RGB LED's and wires are soldered, the LED Board can be tested if you have a 5V power supply (for example a LAB Power supply)
+
+When positioning the LED board as shown in the following picture, the left pin is the (common) GND pin. Insert for example a 330Ohm resistor, and supply 5V with low Amperes ( around 20mA)
+
+Connect the GND power lead to the resistor, and touch insert a thin wire into the second hole right next to where the resistor is inserted. You should see a RED LED, place the wire into the next hole beside it, and you should see a BLUE LED, connecting the positive wire to the next hole you should see a GREEN LED. Repeat this process for each other LED. For every RGB Led you must see the RED,BLUE,GREEN LED's light up. 
+
+If all the three RGB LED's are working, the assembly of the LED Board is completed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
