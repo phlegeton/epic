@@ -52,9 +52,11 @@ The PI Cluster HAT Provides current limiting resistors, to protect the GPIO PIN'
 The Cluster PI HAT also provides a one breakout I2C connector, so the for each node the I2C bus can be used, since the I2C bus interconnects on the back-plane.
 
 ==== I2C EEPROM
-The Raspberry PI provides separate I2C GPIO pins to control a I2C EEPROM, this EEPROM is included as well. 
+The Raspberry PI provides separate I2C GPIO pins to control a I2C EEPROM, The PI CLuster HAT includes this EEPROM is as well. The EEPROM is programmed to provision the GPIO initial status, and controls the Power On LED. The contents of the EEPROM can be overwritten, by reprogramming the EEPROM, and writing an own overlay.
 
-The EEPROM has the required pull down reisistors, as well as test points to control the Read and Write (R/W) signals.
+NOTE: The EEPROM is not necessarily for the operation of the PI Cluster HAT. The Power on LED is controlled by the EEPROM at boot time. However this can be done by an external script as well. 
 
-NOTE: At this moment the EPROM and I2C functionality is not fully tested, and implemented.
+The EEPROM has the required pull down resistors, as well as test points to control the Read and Write (R/W) signals.
+
+NOTE: To be able to write to the EEPROM, the test-points TP1 must be shorted.
 
