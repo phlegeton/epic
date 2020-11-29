@@ -11,6 +11,7 @@ NOTE: Currently the PI Cluster frame (version: {current_version}) is at a point 
 . The back-plane connectors doesn't align properly with the Raspberry PI
 . The PI Cluster HAT hardware problem, causing the MOSFET to be none functional
 . Polarity markings on some PCB silkscreen are missing, or are misplaced. 
+. Not easy to enable EEPROM write
 . The documentation is not fully completed yet. 
 
 :sectnums:
@@ -31,6 +32,11 @@ Severity: *Medium* Issue is already solved, and is fixable in the {current_versi
 Overall there is a lot of work to be done to get the silkscreens of the PCB to have prober markings. In the next versions this issue is going to be addressed.
 
 Severity: *LOW* This is just an inconvenience, care should be taken when soldering wires / connectors for example. 
+
+=== Not easy to enable EEPROM write
+To be able to program the EEPROM, the test points TP1 needs to be shorted together. This now requires a 0 ohm 0805 SMD resistor, ar a small piece of wire. This needs to be fixed, so a jumper can be placed.  
+
+Severity: *LOW* This is just an inconvenience. 
 
 === The documentation is not fully completed yet
 The documentation is becoming more and more complete, however it still needs a lot of work. 
