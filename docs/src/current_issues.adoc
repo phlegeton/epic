@@ -35,4 +35,7 @@ Severity: *LOW* This is just an inconvenience, care should be taken when solderi
 === The documentation is not fully completed yet
 The documentation is becoming more and more complete, however it still needs a lot of work. 
 
-Severity: *HIGH* Documentation is required to be able to build the PI Cluster Frame.   
+Severity: *HIGH* Documentation is required to be able to build the PI Cluster Frame. 
+
+:sectnums!:
+
