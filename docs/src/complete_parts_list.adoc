@@ -1,9 +1,10 @@
+== Complete Parts List
 NOTE: List is provided AS IS. List may contain errors.
 
-== PI Tray
+=== PI Tray
 Parts needed to build 2 Pay tray's and 1 PI Cluster frame (which holds 2 PI's)
 
-=== Hardware
+==== Hardware
 - 8x M2.5 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT
 - 18x M3 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT
 - 8x M2.5x25
@@ -12,16 +13,16 @@ Parts needed to build 2 Pay tray's and 1 PI Cluster frame (which holds 2 PI's)
 - 8x M3x14 
 - 8x M3 nut
 
-=== PCBs
+==== PCBs
 - 2x Fully assembled PI Cluster HAT
 - 2x Fully assembled PowerBoard 
 - 2x Fully assembled LEDBoard
 
 
-== PI Cluster HAT
+=== PI Cluster HAT
 Parts needed to assemble 2x PI Cluster HAT
 
-=== Electronic Components
+==== Electronic Components
 - 18x SMD 0805 330 Ohm resistor
 - 2x SMD 0805 1K Ohm resistor
 - 4x SMD 0805 3.9K Ohm resistor
@@ -37,34 +38,34 @@ Parts needed to assemble 2x PI Cluster HAT
 
 NOTE: Recently the NDS331N became obsolete. Replacement: SSM3K344R, package is different (SOT-23F-3). Same footprint as SOT23
 
-=== PCB
+==== PCB
 
 - 2x PI Cluster HAT PCB
 
-== Power Board
+=== Power Board
 Parts needed to build 2 Power Boards
 
 - 4x 2x3 rows 2.54 pitch female header
 - 2x Pre-crimped JST XHT 2.54mm connector 
 
-=== PCB
+==== PCB
 
 - 2x Power Board PCB
 
-== LED Board
+=== LED Board
 Parts needed to build 2 LED Boards:
 
 - 6x RGB LED 5MM
 - 2x JST XHT 2.54 10 pins connector pre-crimped.
 
-=== PCB
+==== PCB
 
 2x LED Board PCB
 
-== 1x PI Cluster Frame 
+=== 1x PI Cluster Frame 
 One PI cluster Frame holds 2 PI trays
 
-=== Hardware
+==== Hardware
 - 12x M3 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT
 - 4x M3x10
 - 4x M3x25
@@ -72,9 +73,9 @@ One PI cluster Frame holds 2 PI trays
 
 NOTE: rod length based on the number of PI frames. Max 19" for 5 PI frames (10 nodes) For 1 PI frame (which holds 2 PI nodes) rod length is +/- 90mm
 
-=== PCBs
+==== PCBs
 - 1x Backplane
 
-=== Electronic Components 
+==== Electronic Components 
 - 2x 2x3 male header 
 - Enough thick isolated copper wire to connect the backplane + 5V power supply
