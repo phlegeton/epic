@@ -1,0 +1,38 @@
+:imagesdir: assets/images 
+:includesdir: include
+include::./{includesdir}/document_settings.adoc[]
+
+
+== Current issues
+The current PI Cluster version is still in the development phase. This means there are some issues. So before building the PI Cluster Frame, you may take a look at the current known issues. 
+
+NOTE: Currently the PI Cluster frame (version: {current_version}) is at a point that it is useful. There are however some issues that needs to be addressed:
+
+. The back-plane connectors doesn't align properly with the Raspberry PI
+. The PI Cluster HAT hardware problem, causing the MOSFET to be none functional
+. Polarity markings on some PCB silkscreen are missing, or are misplaced. 
+. The documentation is not fully completed yet. 
+
+:sectnums:
+
+=== Back-plane alignment issue
+In the development version *{development_version_beta}* the back-plane connectors don't align well with the PI Tray's connectors. Currently the Power connectors work. However the connectors which can be used for I2C are not tested, or operational. This misalignment makes placing the back-plane onto one PI Cluster Frame quite difficult, however it can be done. Once the back-plane is correctly aligned, both connectors should mate perfectly with the connectors on the PI Tray. However this is not tested with multiple PI Cluster frames stacked together. 
+
+Severity: *HIGH* : Currently it is not advised to manufacture the PI Cluster back-plane PCB's until this issue is fixed or completely tested. 
+
+=== The PI Cluster HAT hardware problem, causing the MOSFET to be none functional
+In the version: *{development_version_beta}* of the PI Cluster HAT the MOSFET is wired wrong. Causing the cooling FAN always to spin at full speed. The fix is already applied, and push to the repository. However when using the *{development_version_beta}* there is any fix, by cutting two traces on the PCB, and solder two bodge wires:
+
+image::pichfix.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+Severity: *Medium* Issue is already solved, and is fixable in the {current_version}
+
+=== Polarity markings on some PCB silkscreen are missing or are misplace
+Overall there is a lot of work to be done to get the silkscreens of the PCB to have prober markings. In the next versions this issue is going to be addressed.
+
+Severity: *LOW* This is just an inconvenience, care should be taken when soldering wires / connectors for example. 
+
+=== The documentation is not fully completed yet
+The documentation is becoming more and more complete, however it still needs a lot of work. 
+
+Severity: *HIGH* Documentation is required to be able to build the PI Cluster Frame.   

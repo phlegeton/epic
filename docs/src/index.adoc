@@ -19,6 +19,7 @@ toc::[]
 
 include::introduction.adoc[]
 include::design_goals.adoc[]
+include::current_issues.adoc[]
 include::preparing_pi_tray.adoc[]
 include::Features_power_board.adoc[]
 include::assemble_power_board.adoc[]
