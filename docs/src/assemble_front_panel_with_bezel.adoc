@@ -1,0 +1,46 @@
+== Assemble the front panel and bezel
+:imagesdir: assets/images
+:includesdir: include
+include::./{includesdir}/document_settings.adoc[]
+
+To assemble the front panel and bezel with 3 light pipes, the following is needed:
+
+image::asfb.jpg[Components needed for PCB assembly{fullWidth},{fullHeight}]
+
+
+To assemble the front panel and bezel, the following parts are needed:
+
+- 3D printed front panel
+- 3D printed light-pipe holder
+- 3D printed bezel
+- 3x printed light-pipe (Need transparent PLA)
+- 2x brass M3 press insert
+- 2x M3x5 bolt 
+
+=== Inserting the light-pipes
+Start by inserting the light-pipes into the light-pipe holder:
+
+image::plhil.jpg[{fullWidth},{fullHeight}]
+
+The light-pipes are pressed in gently from the side with the round holes. After inserting the light-pipes, the light-pipes will stick out a few millimeters.
+
+=== Pressing in the brass inserts
+The brass press inserts needs to be inserted into the front panel. Make sure to align the brass press inserts as straight as possible. 
+
+image::frbbpi.jpg[{fullWidth},{fullHeight}]
+
+=== Insert the light pipe holder into the bezel
+Press the light-pipe holder gently into the front bezel. The light-pipes should align with the square holes in the front bezel. Look at the image below for the right orientation. The overhanging part of the light-pipe holder is on top. This overhang part, will prevent light from escaping ones it is mounted on the PI Tray.
+
+image::aslpfb.jpg[{fullWidth},{fullHeight}]
+
+=== Mount the front panel 
+The last step is to mount the front panel onto the bezel assembly. Align the two mounting posts of the front panel with the hole large holes in the light-pipe holder, while the overhang on the light-pipe holder is on top. In other words, the little cut-out in the front bezel is upwards. This is a tight fit, and may need some force to push the front panel into place. Don't push to hard, since this may break something. If it doesn't fit, check if the front-panel is inserted correctly, and that the holes in the light-pipe holder don't hold any supporting material that needs to be removed. 
+
+image::mfpilph.jpg[{fullWidth},{fullHeight}]
+
+In the last step is to screw the frontpanel onto the light-pipe holder, keeping it secure:
+
+image::srfptlh.jpg[{fullWidth},{fullHeight}]
+
+
