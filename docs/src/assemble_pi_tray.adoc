@@ -95,25 +95,5 @@ image::pitsfp.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
 
 The finished PI Tray should look like this:
 
-image::pitsfp.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+image::fpiha.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
 
