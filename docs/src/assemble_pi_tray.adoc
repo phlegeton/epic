@@ -1,0 +1,119 @@
+:imagesdir: assets/images 
+:includesdir: include
+include::./{includesdir}/document_settings.adoc[]
+
+== Assemble the PI Tray
+Do you remember that a long, long time ago you prepared the PI Tray at the very beginning of this Hardware manual ? Well, now is the time to blow the dust of it, and start assembling the PI Tray. 
+
+To assemble the PI Tray, the following is needed:
+
+image::aspt.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+- 1x Raspberry PI3 (or PI4)
+- 1x An prepared PI Tray
+- 1x An assembled PI Cluster HAT
+- 1x An assembled Power Board
+- 1x An assembled LED board
+- 1x An assemble front panel + bezel
+- 1x 3D printed fan holder
+- 4x 3D printed stand-off
+- 1x 5V Fan + wire + JST XH 2.54 connector
+- 4x M2.5x25 bolt
+- 5x M3x5 bolt
+- 2x M2x6 bolt
+- 2x M3x16 bolt
+- 2x M3 nut
+
+TIP: The 2x M3x5 bolt can be replaced with 2xM3x6 bolt. Another thing to consider is to use metal M2.5 stand-off with M2.5 bolt/screw. 
+
+=== Place and attach the Power Board to the PI Tray
+The first step is to attach the Power Board. The PowerBoard should click into place:
+
+image::piapwrb.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+When the board is correctly fitted, use 3x M3x5 bolt to screw the board into place.
+
+=== Place and attach the LED Board to the PI Tray
+Next the LED Board can be placed. The easiest way of placing the LED board, is to put it in under a angle, face the LED's down in a angle, towards the front of the PI Tray. The LED's should line up with the 3 holes in the front of the PI Tray. Next push the underside of the PCB into the cut-out. It should click into place. This may require some force, but don't use to much force. 
+
+image::ptpllb.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+Once the LED Board is correctly placed, use 2x M3x6 bolt to secure the board in place:
+
+image::pitalb.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+=== Attach the FAn to the FAN holder
+The FAN should be placed correctly on to the FAN holder. This means the FAN should suck in cool air, and blow the air against the CPU. 
+
+TIP: To determine in which way the FAN spins, connect the 5V FAN to a 5V PSU, and use a small piece of paper. Hold this small piece of paper close to the FAN, while it's spinning. If the piece of paper moves towards the FAN, the air is sucked in. If however the piece of paper is blown away from the FAN, the FAN is blowing air out. 
+
+When connecting the FAN take note of the FAN holder. The FAN holder fits only in one direction:
+
+image::pitattfth.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+When the correct position of the FAN holder is determined, screw the FAN onto the FAN holder:
+
+image::pitscfth.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+Finally attach the FAN holder onto the PI Cluster Frame. Make sure that excessive wire is out of the way of the FAN
+
+image::pitatftofhld.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+=== Attach the Raspberry PI and PI HAT together
+image::apictrasp.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+To attach PI Cluster HAT onto the Raspberry PI, 4 3D printed stand-off can be used with 4x M2.5x25 bolt. However, you could also use metal stand-offs with the same height. Personally I prefer to use long screws with the 3D printed stand-offs. The funny thing is that I discovered this by accident. I didn't had enough M2.5 metal stand-offs in stock. So I quickly sketched some PLA stand-offs, and used at that time M3x25 bolts. And I discovered that by using this construction I can simply unbolt 4 bolts, and take the hole PI assembly of the PI Tray, which make swapping a PI or an other component a breeze. 
+
+Anyway: Start by pressing the PI Cluster HAT somewhat down on the 2x20 male header on the Raspberry PI. Don't push the PI Cluster HAT all the way down. This makes inserting the 3D printed stand-offs easier:
+
+image::pitist.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+Insert the 4x 3D printed stand-offs and 4x bolts.
+
+Place the whole assembly of the Raspberry PI and the Pi Cluster HAT onto the PI Tray, align the holes with the four bolts.  Press the PI CLuster HAT down onto the Raspberry PI (if you not had done this already) 
+
+Screw the assembly into place. Make sure the power cable on the back is not between the Raspberry PI and the SD card holder, by making sure the power cable is guided along the corner:
+
+image::pwcat.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+Connect all the wires: 
+
+- Connect FAN wire
+- Connect Power wire
+- Connect the RG wire
+
+=== Attach the front panel
+The last step is to attach the front panel to the PI Tray using 2x M3x5 bolt:
+
+Slide the front panel onto the PI tray:
+
+image::pitatfrp.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+Secure the front panel into place with two screws:
+
+image::pitsfp.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+
+The finished PI Tray should look like this:
+
+image::pitsfp.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
