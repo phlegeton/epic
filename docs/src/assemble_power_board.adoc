@@ -43,11 +43,3 @@ The finished Power Board should look like this:
 
 image::solderd_pwc.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
 
-
-
-
-
-
-
-
-

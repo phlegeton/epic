@@ -80,19 +80,3 @@ Connect the GND power lead to the resistor, and touch insert a thin wire into th
 
 If all the three RGB LED's are working, the assembly of the LED Board is completed.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

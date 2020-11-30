@@ -39,5 +39,3 @@ TIP: Use a long screw (for example a M3x20mm) to position the brass press insert
 
 image::pitp3.jpg["Buildimage",{fullWidth},{fullHeight}]
 
-
-

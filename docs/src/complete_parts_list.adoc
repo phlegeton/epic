@@ -79,3 +79,4 @@ NOTE: rod length based on the number of PI frames. Max 19" for 5 PI frames (10 n
 ==== Electronic Components 
 - 2x 2x3 male header 
 - Enough thick isolated copper wire to connect the backplane + 5V power supply
+

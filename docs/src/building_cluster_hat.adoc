@@ -50,3 +50,4 @@ image::pihataslcnt.jpg[Components needed for PCB assembly,{fullWidth},{fullHeigh
 NOTE: During development, the PCB version 2.0 (Hades Edition) a few bodge wires where needed, to let the MOSFET do it's work. Also note that the test points are shorted together, allowing the EEPROM te be written. 
 
 When soldering the PCB start with the smallest componets. So first solder the resistors, the and the other SMD components. Next solder the connectors (if you choose to use connectors). Solder the 2x20 GPIO header as last part. Make sure the GPIO header is straight, and in a 90 degree angle to the board. 
+

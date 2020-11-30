@@ -14,3 +14,4 @@ The power board PCB provides the following features on a small footprint:
 The power board contains 2x female 2x3 headers which allows 5V distribution to the back-plane on one 2x3 connector, and the 2x3 connector allows for I2C connection and 3V power distribution. The Power board doesn't contain any active or passive components, other then tw 2x3 female connectors. 
 
 Both the connectors must be aligned to the mating back-plane connectors to allow a low voltage drop connection.
+
