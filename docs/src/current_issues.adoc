@@ -13,6 +13,7 @@ NOTE: Currently the PI Cluster frame (version: {current_version}) is at a point 
 . Polarity markings on some PCB silkscreen are missing, or are misplaced. 
 . Not easy to enable EEPROM write
 . The documentation is not fully completed yet. 
+. When using a PI4 it's difficult to remove the Ethernet cable.
 
 :sectnums:
 
@@ -42,6 +43,11 @@ Severity: *LOW* This is just an inconvenience.
 The documentation is becoming more and more complete, however it still needs a lot of work. 
 
 Severity: *HIGH* Documentation is required to be able to build the PI Cluster Frame. 
+
+=== When using a PI4 it's difficult to remove the Ethernet cable
+When a Pi4 is used in a Pi Tray the Ethernet port is on the right side instead of the left side. On the left side there is a small cut-out, so it's easier to remove a ethernet cable. However this cut-out is not available on the right side. Making it difficult to detach a ethernet cable.
+
+Severity: *LOW*  This is just an inconvenience, and the front bezel needs a redesign anyway. 
 
 :sectnums!:
 
