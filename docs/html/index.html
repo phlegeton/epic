@@ -446,13 +446,93 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <span id="author" class="author">Hades</span><br>
 <span id="email" class="email"><a href="mailto:hades@spacebugs.nl">hades@spacebugs.nl</a></span><br>
 <span id="revnumber">version 1.0,</span>
-<span id="revdate">2020-21-11</span>
+<span id="revdate">2020-28-11</span>
 </div>
 </div>
 <div id="content">
-<div class="sect1">
-<h2 id="_introduction">Introduction</h2>
+<div id="preamble">
 <div class="sectionbody">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_introduction">Introduction</a></li>
+<li><a href="#_design_goals">Design goals</a></li>
+<li><a href="#_current_issues">Current issues</a>
+<ul class="sectlevel2">
+<li><a href="#_back_plane_alignment_issue">.1. Back-plane alignment issue</a></li>
+<li><a href="#_the_pi_cluster_hat_hardware_problem_causing_the_mosfet_to_be_none_functional">.2. The PI Cluster HAT hardware problem, causing the MOSFET to be none functional</a></li>
+<li><a href="#_polarity_markings_on_some_pcb_silkscreen_are_missing_or_are_misplace">.3. Polarity markings on some PCB silkscreen are missing or are misplace</a></li>
+<li><a href="#_not_easy_to_enable_eeprom_write">.4. Not easy to enable EEPROM write</a></li>
+<li><a href="#_the_documentation_is_not_fully_completed_yet">.5. The documentation is not fully completed yet</a></li>
+<li><a href="#_when_using_a_pi4_its_difficult_to_remove_the_ethernet_cable">.6. When using a PI4 it&#8217;s difficult to remove the Ethernet cable</a></li>
+</ul>
+</li>
+<li><a href="#_roadmap">Roadmap</a></li>
+<li><a href="#_features_postponed">Features postponed</a></li>
+<li><a href="#_wish_list">Wish list</a></li>
+<li><a href="#_preparing_the_pi_tray">Preparing the PI Tray</a></li>
+<li><a href="#_assemble_the_front_panel_and_bezel">Assemble the front panel and bezel</a>
+<ul class="sectlevel2">
+<li><a href="#_inserting_the_light_pipes">Inserting the light-pipes</a></li>
+<li><a href="#_pressing_in_the_brass_inserts">Pressing in the brass inserts</a></li>
+<li><a href="#_insert_the_light_pipe_holder_into_the_bezel">Insert the light pipe holder into the bezel</a></li>
+<li><a href="#_mount_the_front_panel">Mount the front panel</a></li>
+</ul>
+</li>
+<li><a href="#_features_of_the_power_board">Features of the Power Board</a>
+<ul class="sectlevel2">
+<li><a href="#_theory_of_operation">Theory of operation</a></li>
+</ul>
+</li>
+<li><a href="#_assemble_the_powerboard">Assemble the PowerBoard</a></li>
+<li><a href="#_featues_of_the_pi_cluster_hat">Featues of the PI Cluster HAT</a>
+<ul class="sectlevel2">
+<li><a href="#_pi_cluster_hat_theory_of_operation">PI Cluster HAT Theory of Operation</a></li>
+<li><a href="#_cooling_fan">Cooling FAN</a></li>
+<li><a href="#_5v_power">5V Power</a></li>
+<li><a href="#_gpio_features">GPIO Features</a></li>
+</ul>
+</li>
+<li><a href="#_assemble_the_pi_cluster_hat">Assemble the PI Cluster HAT</a>
+<ul class="sectlevel2">
+<li><a href="#_soldering_the_pcb">Soldering the PCB</a></li>
+</ul>
+</li>
+<li><a href="#_featues_of_the_led_board">Featues of the LED Board</a>
+<ul class="sectlevel2">
+<li><a href="#_theory_of_operation_2">Theory of Operation</a></li>
+</ul>
+</li>
+<li><a href="#_assemble_the_led_board">Assemble the LED Board</a>
+<ul class="sectlevel2">
+<li><a href="#_placing_the_rgb_leds">Placing the RGB LED&#8217;s</a></li>
+<li><a href="#_using_the_soldering_helper_tool">Using the soldering helper tool</a></li>
+<li><a href="#_soldering_the_wires_onto_the_led_board">Soldering the wires onto the LED Board</a></li>
+<li><a href="#_testing_the_led_board">Testing the LED Board</a></li>
+</ul>
+</li>
+<li><a href="#_assemble_the_pi_tray">Assemble the PI Tray</a>
+<ul class="sectlevel2">
+<li><a href="#_place_and_attach_the_power_board_to_the_pi_tray">Place and attach the Power Board to the PI Tray</a></li>
+<li><a href="#_place_and_attach_the_led_board_to_the_pi_tray">Place and attach the LED Board to the PI Tray</a></li>
+<li><a href="#_attach_the_fan_to_the_fan_holder">Attach the FAn to the FAN holder</a></li>
+<li><a href="#_attach_the_raspberry_pi_and_pi_hat_together">Attach the Raspberry PI and PI HAT together</a></li>
+<li><a href="#_attach_the_front_panel">Attach the front panel</a></li>
+</ul>
+</li>
+<li><a href="#_building_the_frame">Building the frame</a></li>
+<li><a href="#_parts_list_introduction">Parts List introduction</a></li>
+<li><a href="#_complete_parts_list">Complete Parts List</a>
+<ul class="sectlevel2">
+<li><a href="#_pi_tray">PI Tray</a></li>
+<li><a href="#_pi_cluster_hat">PI Cluster HAT</a></li>
+<li><a href="#_power_board">Power Board</a></li>
+<li><a href="#_led_board">LED Board</a></li>
+<li><a href="#_1x_pi_cluster_frame">1x PI Cluster Frame</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <div class="paragraph">
 <p>Hades &lt;<a href="mailto:hades@spacebugs.nl">hades@spacebugs.nl</a>&gt;
 v1.0, 2020-16-11</p>
@@ -460,7 +540,7 @@ v1.0, 2020-16-11</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_introduction_2">Introduction</h2>
+<h2 id="_introduction">Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Having some Raspberry PI&#8217;s at your disposal is already fun. Turning them into a cluster is really fun. Well.. I think it&#8217;s fun. A few years back a friend and I came to the elusive idea of building a 10 node cluster. We had our reasons to do so. The first and most obvious reason is of course to have fun. The other reasons were about learning something about clusters, software deployment on a cluster.</p>
@@ -516,10 +596,6 @@ v1.0, 2020-16-11</p>
 </td>
 <td class="content">
 This document describes the first development version. It&#8217;s far from complete, and may not even be useful to anyone.
-:includesdir: include
-= Design Goals
-Hades &lt;<a href="mailto:hades@spacebugs.nl">hades@spacebugs.nl</a>&gt;
-v1.0, 2020-17-11
 </td>
 </tr>
 </table>
@@ -536,12 +612,326 @@ v1.0, 2020-17-11
 <p>That brings me to the second design goal: The whole design needs to be free to everyone who wants to build it, and it must be possible for everyone to adjust it to one needs.</p>
 </div>
 <div class="paragraph">
-<p>So this frame is ideal if you want to stack some PI&#8217;s together. However if you need access to the GPIO pins, this frame might not be for you. The  GPIO pins are covered by a HAT which enables the PI cluster node to have proper cooling, and allows for three RGB leds. This frame intended use is for housing a PI cluster. And normally in a cluster setup the GPIO pins are not used. (in this case some of them are, for controlling RGB status LED&#8217;s and a FAN for cooling).
-:imagesdir: assets/images
-:includesdir: include
-= Features power board
-Hades &lt;<a href="mailto:hades@spacebugs.nl">hades@spacebugs.nl</a>&gt;
-v1.0, 2020-20-11</p>
+<p>So this frame is ideal if you want to stack some PI&#8217;s together. However if you need access to the GPIO pins, this frame might not be for you. The  GPIO pins are covered by a HAT which enables the PI cluster node to have proper cooling, and allows for three RGB leds. This frame intended use is for housing a PI cluster. And normally in a cluster setup the GPIO pins are not used. (in this case some of them are, for controlling RGB status LED&#8217;s and a FAN for cooling).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_current_issues">Current issues</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The current PI Cluster version is still in the development phase. This means there are some issues. So before building the PI Cluster Frame, you may take a look at the current known issues.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Currently the PI Cluster frame (version: 2.0 Hades Edition) is at a point that it is useful. There are however some issues that needs to be addressed:
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The back-plane connectors doesn&#8217;t align properly with the Raspberry PI</p>
+</li>
+<li>
+<p>The PI Cluster HAT hardware problem, causing the MOSFET to be none functional</p>
+</li>
+<li>
+<p>Polarity markings on some PCB silkscreen are missing, or are misplaced.</p>
+</li>
+<li>
+<p>Not easy to enable EEPROM write</p>
+</li>
+<li>
+<p>The documentation is not fully completed yet.</p>
+</li>
+<li>
+<p>When using a PI4 it&#8217;s difficult to remove the Ethernet cable.</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="_back_plane_alignment_issue">.1. Back-plane alignment issue</h3>
+<div class="paragraph">
+<p>In the development version <strong>2.0 Hades Edition</strong> the back-plane connectors don&#8217;t align well with the PI Tray&#8217;s connectors. Currently the Power connectors work. However the connectors which can be used for I2C are not tested, or operational. This misalignment makes placing the back-plane onto one PI Cluster Frame quite difficult, however it can be done. Once the back-plane is correctly aligned, both connectors should mate perfectly with the connectors on the PI Tray. However this is not tested with multiple PI Cluster frames stacked together.</p>
+</div>
+<div class="paragraph">
+<p>Severity: <strong>HIGH</strong> : Currently it is not advised to manufacture the PI Cluster back-plane PCB&#8217;s until this issue is fixed or completely tested.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_pi_cluster_hat_hardware_problem_causing_the_mosfet_to_be_none_functional">.2. The PI Cluster HAT hardware problem, causing the MOSFET to be none functional</h3>
+<div class="paragraph">
+<p>In the version: <strong>2.0 Hades Edition</strong> of the PI Cluster HAT the MOSFET is wired wrong. Causing the cooling FAN always to spin at full speed. The fix is already applied, and push to the repository. However when using the <strong>2.0 Hades Edition</strong> there is any fix, by cutting two traces on the PCB, and solder two bodge wires:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/pichfix.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>Severity: <strong>Medium</strong> Issue is already solved, and is fixable in the 2.0 Hades Edition</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_polarity_markings_on_some_pcb_silkscreen_are_missing_or_are_misplace">.3. Polarity markings on some PCB silkscreen are missing or are misplace</h3>
+<div class="paragraph">
+<p>Overall there is a lot of work to be done to get the silkscreens of the PCB to have prober markings. In the next versions this issue is going to be addressed.</p>
+</div>
+<div class="paragraph">
+<p>Severity: <strong>LOW</strong> This is just an inconvenience, care should be taken when soldering wires / connectors for example.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_not_easy_to_enable_eeprom_write">.4. Not easy to enable EEPROM write</h3>
+<div class="paragraph">
+<p>To be able to program the EEPROM, the test points TP1 needs to be shorted together. This now requires a 0 ohm 0805 SMD resistor, ar a small piece of wire. This needs to be fixed, so a jumper can be placed.</p>
+</div>
+<div class="paragraph">
+<p>Severity: <strong>LOW</strong> This is just an inconvenience.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_documentation_is_not_fully_completed_yet">.5. The documentation is not fully completed yet</h3>
+<div class="paragraph">
+<p>The documentation is becoming more and more complete, however it still needs a lot of work.</p>
+</div>
+<div class="paragraph">
+<p>Severity: <strong>HIGH</strong> Documentation is required to be able to build the PI Cluster Frame.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_when_using_a_pi4_its_difficult_to_remove_the_ethernet_cable">.6. When using a PI4 it&#8217;s difficult to remove the Ethernet cable</h3>
+<div class="paragraph">
+<p>When a Pi4 is used in a Pi Tray the Ethernet port is on the right side instead of the left side. On the left side there is a small cut-out, so it&#8217;s easier to remove a ethernet cable. However this cut-out is not available on the right side. Making it difficult to detach a ethernet cable.</p>
+</div>
+<div class="paragraph">
+<p>Severity: <strong>LOW</strong>  This is just an inconvenience, and the front bezel needs a redesign anyway.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_roadmap">Roadmap</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Currently the focus of the project is to get a minimal full working PI Cluster Frame. This means a few features are postponed, or new ideas are being put on a wishlist. To keep track of these postponed features and wishes, they are listed here. Implementing these features means that components of the PI Cluster Frame are going to be changed. And there is no intention to try to keep things backward compatible. This will slow the project down, and is almost not doable.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_features_postponed">Features postponed</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Be able to power down nodes, and keep the power status, even when the whole cluster is powered down. Implementing means possible change to back-plane.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_wish_list">Wish list</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Be able to connect a serial terminal to each cluster node. Implementing this causes the back-plane PCB to change, and the front bezel of PI Tray</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_preparing_the_pi_tray">Preparing the PI Tray</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The PI Tray is responsible for holding several components:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The Raspberry PI itself</p>
+</li>
+<li>
+<p>The PI Cluster HAT + cooling FAN</p>
+</li>
+<li>
+<p>The Power board</p>
+</li>
+<li>
+<p>The LED board</p>
+</li>
+<li>
+<p>The front plate</p>
+</li>
+<li>
+<p>The front bezel</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To coop with all of this, the PI tray needs the be prepared by inserting some brass press inserts.
+There are several options:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use 4x M2.5 brass press inserts to mount the Raspberry PI</p>
+</li>
+<li>
+<p>Use 7x M3 brass press inserts to mount the rest of the components</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>or:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use M2.5 brass inserts for every thing.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Both options will work, as long the brass press inserts require a hole of +/- 4mm (And they should)</p>
+</div>
+<div class="paragraph">
+<p>In this document the puristic path is chosen, just because this is how the design was intended.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/pitp1.jpg" alt="Buildimage" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>The easiest way of prepare the PI Tray is to start with the M2.5 brass inserts, by inserting them into the 4 holes and press them in the four holes by using a hot soldering iron.</p>
+</div>
+<div class="paragraph">
+<p>Next the M3 brass inserts can be inserted. Make sure not to melt the PLA when inserting the brass press inserts for the power board. And alo keep in mind, the brass press inserts for the LED board are inserted from the front. Trying to this the other way around, will for sure damage the PI Tray beyond any repair.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/pitp2.jpg" alt="Buildimage" width="245" height="150">
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+Use a long screw (for example a M3x20mm) to position the brass press inserts. Just insert the screw one thread, so the screw can be easily removed.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/pitp3.jpg" alt="Buildimage" width="245" height="150">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_assemble_the_front_panel_and_bezel">Assemble the front panel and bezel</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To assemble the front panel and bezel with 3 light pipes, the following is needed:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/asfb.jpg" alt="Components needed for PCB assembly245" width="150">
+</div>
+</div>
+<div class="paragraph">
+<p>To assemble the front panel and bezel, the following parts are needed:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>3D printed front panel</p>
+</li>
+<li>
+<p>3D printed light-pipe holder</p>
+</li>
+<li>
+<p>3D printed bezel</p>
+</li>
+<li>
+<p>3x printed light-pipe (Need transparent PLA)</p>
+</li>
+<li>
+<p>2x brass M3 press insert</p>
+</li>
+<li>
+<p>2x M3x5 bolt</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_inserting_the_light_pipes">Inserting the light-pipes</h3>
+<div class="paragraph">
+<p>Start by inserting the light-pipes into the light-pipe holder:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/plhil.jpg" alt="245" width="150">
+</div>
+</div>
+<div class="paragraph">
+<p>The light-pipes are pressed in gently from the side with the round holes. After inserting the light-pipes, the light-pipes will stick out a few millimeters.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pressing_in_the_brass_inserts">Pressing in the brass inserts</h3>
+<div class="paragraph">
+<p>The brass press inserts needs to be inserted into the front panel. Make sure to align the brass press inserts as straight as possible.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/frbbpi.jpg" alt="245" width="150">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_insert_the_light_pipe_holder_into_the_bezel">Insert the light pipe holder into the bezel</h3>
+<div class="paragraph">
+<p>Press the light-pipe holder gently into the front bezel. The light-pipes should align with the square holes in the front bezel. Look at the image below for the right orientation. The overhanging part of the light-pipe holder is on top. This overhang part, will prevent light from escaping ones it is mounted on the PI Tray.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/aslpfb.jpg" alt="245" width="150">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mount_the_front_panel">Mount the front panel</h3>
+<div class="paragraph">
+<p>The last step is to mount the front panel onto the bezel assembly. Align the two mounting posts of the front panel with the hole large holes in the light-pipe holder, while the overhang on the light-pipe holder is on top. In other words, the little cut-out in the front bezel is upwards. This is a tight fit, and may need some force to push the front panel into place. Don&#8217;t push to hard, since this may break something. If it doesn&#8217;t fit, check if the front-panel is inserted correctly, and that the holes in the light-pipe holder don&#8217;t hold any supporting material that needs to be removed.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/mfpilph.jpg" alt="245" width="150">
+</div>
+</div>
+<div class="paragraph">
+<p>In the last step is to screw the frontpanel onto the light-pipe holder, keeping it secure:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/srfptlh.jpg" alt="245" width="150">
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -576,20 +966,13 @@ v1.0, 2020-20-11</p>
 <p>The power board contains 2x female 2x3 headers which allows 5V distribution to the back-plane on one 2x3 connector, and the 2x3 connector allows for I2C connection and 3V power distribution. The Power board doesn&#8217;t contain any active or passive components, other then tw 2x3 female connectors.</p>
 </div>
 <div class="paragraph">
-<p>Both the connectors must be aligned to the mating back-plane connectors to allow a low voltage drop connection.
-:imagesdir: assets/images
-:includesdir: include
-= Building Power Board
-Hades &lt;<a href="mailto:hades@spacebugs.nl">hades@spacebugs.nl</a>&gt;
-v1.0, 2020-20-11
-:fullWidth: 245
-:fullHeight: 150</p>
+<p>Both the connectors must be aligned to the mating back-plane connectors to allow a low voltage drop connection.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_building_the_powerboard">Building the PowerBoard</h2>
+<h2 id="_assemble_the_powerboard">Assemble the PowerBoard</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Materials needed:</p>
@@ -606,21 +989,17 @@ v1.0, 2020-20-11
 <p>1x JST XH 254 connector</p>
 </li>
 <li>
-<p>1x Black wire</p>
+<p>1x JST pre-crimped connectors</p>
 </li>
 <li>
-<p>1x Red wire</p>
-</li>
-<li>
-<p>2x JST crimp connectors</p>
-</li>
-<li>
-<p>1x Connector template</p>
-</li>
-<li>
-<p>1x Crimp tool the crimp the JST XH 2.54 connector</p>
+<p>1x 3D printed Connector alignment tool</p>
 </li>
 </ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/pbas.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -646,22 +1025,48 @@ Before assembly make sure to print the alignment tool from the extra folder. Thi
 </tr>
 </table>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="assets/images/pbas.jpg" alt="Components needed for PCB assembly">
-</div>
-</div>
 <div class="paragraph">
-<p>Use the alignment tool to align the connectors</p>
+<p>Start by inserting the 2x 2x3 2.54 female headers in the alignment tool like this:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="assets/images/pbalt.jpg" alt="Components needed for PCB assembly][width=246">
+<img src="assets/images/use_of_alt.jpg" alt="Components needed for PCB assembly" width="245" height="150">
 </div>
 </div>
 <div class="paragraph">
-<p>Hades &lt;<a href="mailto:hades@spacebugs.nl">hades@spacebugs.nl</a>&gt;
-v1.0, 2020-20-11</p>
+<p>Next place the Power Board PCB with the silkscreen facing down. Make sure to align the PCB and the connectors with the most outer holes, so the PCB should be roughly in the center of the alignment tool. Press the PCB down, so it sits flat with the surface of the alignment tool:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/pcb_placement_alt.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>Solder the connectors onto the PCB, and once the connectors are soldered remove the PCB gently from the alignment tool.</p>
+</div>
+<div class="paragraph">
+<p>Next, cut the pre-crimped JST cable, using a 6.5CM length, and make sure that the guiding profile of the connector is facing upwards:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/cptl.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>The last step is to solder the wire onto the PCB. Make sure to solder the wire on the back of the PCB, and also make sure to get the polarity right: solder the RED () onto the plus () on the PCB:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/polarity_pwc.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>The finished Power Board should look like this:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/solderd_pwc.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
 </div>
 </div>
 </div>
@@ -773,10 +1178,7 @@ The RGB LED&#8217;s can for instance be used as a power on LED, Temperature stat
 <div class="sect3">
 <h4 id="_i2c_eeprom">I2C EEPROM</h4>
 <div class="paragraph">
-<p>The Raspberry PI provides separate I2C GPIO pins to control a I2C EEPROM, this EEPROM is included as well.</p>
-</div>
-<div class="paragraph">
-<p>The EEPROM has the required pull down reisistors, as well as test points to control the Read and Write (R/W) signals.</p>
+<p>The Raspberry PI provides separate I2C GPIO pins to control a I2C EEPROM, The PI CLuster HAT includes this EEPROM is as well. The EEPROM is programmed to provision the GPIO initial status, and controls the Power On LED. The contents of the EEPROM can be overwritten, by reprogramming the EEPROM, and writing an own overlay.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -785,15 +1187,22 @@ The RGB LED&#8217;s can for instance be used as a power on LED, Temperature stat
 <div class="title">Note</div>
 </td>
 <td class="content">
-At this moment the EPROM and I2C functionality is not fully tested, and implemented.
-:safe-mode-level: 0
-:imagesdir: assets/images
-:includesdir: include
-= Building cluster frame
-Hades &lt;<a href="mailto:hades@spacebugs.nl">hades@spacebugs.nl</a>&gt;
-v1.0, 2020-20-11
-:fullWidth: 245
-:fullHeight: 150
+The EEPROM is not necessarily for the operation of the PI Cluster HAT. The Power on LED is controlled by the EEPROM at boot time. However this can be done by an external script as well.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The EEPROM has the required pull down resistors, as well as test points to control the Read and Write (R/W) signals.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+To be able to write to the EEPROM, the test-points TP1 must be shorted.
 </td>
 </tr>
 </table>
@@ -803,11 +1212,569 @@ v1.0, 2020-20-11
 </div>
 </div>
 <div class="sect1">
-<h2 id="_building_the_frame">Building the frame</h2>
+<h2 id="_assemble_the_pi_cluster_hat">Assemble the PI Cluster HAT</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Written by Hades</p>
+<p>The PI Cluster HAT PCB contains SMD parts and also Through Hole parts. It may require some skills to solder these SMD parts, but it shouldn&#8217;t be too hard to do, since the SMD package size is rather large (SOT-23-3 and 0805).</p>
 </div>
+<div class="paragraph">
+<p>Per PCB you need:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>9x SDM 0805 330 Ohm resistor</p>
+</li>
+<li>
+<p>2x SMD 0805 3.9K Ohm resistor</p>
+</li>
+<li>
+<p>1x SMD 0805 1K Ohm resistor</p>
+</li>
+<li>
+<p>1x 2 Amp SMD 1206 fuse 63V 2A Slow blow</p>
+</li>
+<li>
+<p>1x CAT 24c32 EEProm</p>
+</li>
+<li>
+<p>1x NDS351N MOSFET (SMD sot-23-3)</p>
+</li>
+<li>
+<p>2x 10 pins JST XH cable connectors (these are available already crimped to a cable)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Depending on how you connect everything to the PI Cluster HAT:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Solder the wires directly onto the PCB</p>
+</li>
+<li>
+<p>Use connectors</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>When using connectors you need the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>1x 40 pins GPIO header</p>
+</li>
+<li>
+<p>1x  10 pins JST XH 90 degree angle PCB connector</p>
+</li>
+<li>
+<p>2x 2 pins JST XH 90 degree angle PCB connector</p>
+</li>
+<li>
+<p>1x 6 pins box header</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The pro of soldering the wires directly to the PCB is the low profile. The downside is of course that when removing or when needing to replace a part, the wires needs to be de-soldered.</p>
+</div>
+<div class="paragraph">
+<p>When using connectors, all the connections can easily be disconnected. Which makes maintenance much easier. However, it costs more.</p>
+</div>
+<div class="paragraph">
+<p>Whichever solution you choose, it doesn&#8217;t matter, as long as the profile of the PCB is as low as possible.</p>
+</div>
+<div class="sect2">
+<h3 id="_soldering_the_pcb">Soldering the PCB</h3>
+<div class="paragraph">
+<p>When starting to solder the PCB, first start with the SMD components:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/pihatassmd.jpg" alt="Components needed for PCB assembly245" width="150">
+</div>
+</div>
+<div class="paragraph">
+<p>Next solder the JST XH 2.54 haeders onto the PCB</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/pihatascnt.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>As a last step solder the 6 pins 2.54mm header, and then the as the last component the 2x20 GPIO pin header at the other side of the PCB. The final PCB is shown below. In a last step the FLUX must be cleaned up from the PCB. But apart from that, this is how the finished PCB should look like.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/pihataslcnt.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+During development, the PCB version 2.0 (Hades Edition) a few bodge wires where needed, to let the MOSFET do it&#8217;s work. Also note that the test points are shorted together, allowing the EEPROM te be written.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_featues_of_the_led_board">Featues of the LED Board</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The LED Board provides the following features:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>3x RGB LED on a small PCB</p>
+</li>
+<li>
+<p>Easy connection to the PI Cluster HAT by using one JST XH 10 pins female connector</p>
+</li>
+<li>
+<p>One common GND PIN for easy controlling the RGB LED&#8217;s and save precious space on the PI Cluster HAT</p>
+</li>
+<li>
+<p>Easy and solid attachment to PI Tray</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_theory_of_operation_2">Theory of Operation</h3>
+<div class="paragraph">
+<p>The LED Board holds 3 Common Cathode RGB LED&#8217;s on a small PCB. The RGB LED&#8217;s share a common GND. This reduces the number of connections needed from 12 connections to 10 connections, which save space on the PI Cluster HAT, and also save on the number of wires.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The silkscreen on the PCB has no GND or (-) marking. This is fixed in the next version of the PCB. The pin closest to the silkscreen marking "J1" is the common GND pin.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_assemble_the_led_board">Assemble the LED Board</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The assembly of the LED Board is perhaps the most tricky one. Since space on the LED Board is quite limited, the footprint of the RGB LED&#8217;s are somewhat "spaced close together". You get this when trying to solder the RGB LED&#8217;s, without trying to bridge the pins together.</p>
+</div>
+<div class="paragraph">
+<p>To assemble the LED Board, the following is needed:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>1x LED board</p>
+</li>
+<li>
+<p>3x RGB LED</p>
+</li>
+<li>
+<p>1x Solder helper tool (Trust me, you really want to 3D print this tool and actually use it)</p>
+</li>
+<li>
+<p>1x (pre) crimped JST XH 10 pins 2.54 female connector</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/asrgblb.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_placing_the_rgb_leds">Placing the RGB LED&#8217;s</h3>
+<div class="paragraph">
+<p>The first and most important thing is to insert the RGB LED&#8217;s in the right orientation. The next image is demonstrating this:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/rgb_led_orientation.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>Another way of looking at this is: On the PCB the LED markings have an open spot, the flat side of the RGB should be at this opening:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/rgblb.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>After determine the right orientation of the RGB LED&#8217;s insert them into the LED board:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/rgb_ilb.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_the_soldering_helper_tool">Using the soldering helper tool</h3>
+<div class="paragraph">
+<p>Add this point, you should have 3D printed the solder helper tool. Place the LED Board PCB as follows in the solder helper tool:</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+To align the RGB flat with the PCB, there is only one way of inserting the PCB correctly into the solder helper tool
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/rgb_pcb_ht.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>As you can see from the picture, it may help to cut the RGB LED&#8217;s legs short, to make soldering even easier.</p>
+</div>
+<div class="paragraph">
+<p>Once the PCB is inserted correctly, and the RGB LED&#8217;s are flat with the PCB surface, solder all the legs of the RGB LED&#8217;s without bridging them.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+To prevent bridging, use 0.5mm tin. And if pins are bridge, cut the legs short as possible and use solder wick to suck away the tin.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_soldering_the_wires_onto_the_led_board">Soldering the wires onto the LED Board</h3>
+<div class="paragraph">
+<p>Once all the RGB LED&#8217;s are soldered, time to cut the the wire to length, by cutting the 10 string cable at at a length of 9.5CM. Make sure the guiding pins on the connector face upwards:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/asrgbcbl.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>Next pull apart the 10 strings for about 3CM, and cut off +/- 0.5CM of isolation, to expose the bare copper wires.</p>
+</div>
+<div class="paragraph">
+<p>To make inserting the 10 wires into the PCB easier, tin the wires lightly. This is best done by using 0.5mm soldering tin, and clean the solder iron tip after each wire, to loosen the extra tin, preventing it going onto the next wire.</p>
+</div>
+<div class="paragraph">
+<p>Take your time to tin the wires lightly. When to much tin is applied to the wires, they may become to thick to be inserted into the holes on the LED Board PCB.</p>
+</div>
+<div class="sect3">
+<h4 id="_insert_the_wires_with_the_correct_orientation">Insert the wires with the correct orientation</h4>
+<div class="paragraph">
+<p>Once the wires are tinned, insert the 10 wires onto the back of the LED Board PCB. When inserting the wires make sure that the orientation is correct. The next image shows an complete assembled RGB LED Board, and notice the orientation of the connector:</p>
+</div>
+<div class="paragraph">
+<p>The guide lines thingy on the connector is facing upward, while on the LED Board the wire connections are on the bottom.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/rgb_cbl_orientation.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>Looking at the image above, the GND (common) pin is on the left.</p>
+</div>
+<div class="paragraph">
+<p>Once the wires are inserted, the soldering helper tool can help by making it more easy to soldering the wires:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/srgblwht.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>It may be tricky to insert the wires, and make sure they stay inserted into the PCB while placing the PCB into the helper tool.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+It may help to solder the first two or three wires "by hand", and then inserting the wires into the PCB, and placing the PCB carefully into the helper tool. By soldering the first wires, it may help to keep the wires into position.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_testing_the_led_board">Testing the LED Board</h3>
+<div class="paragraph">
+<p>Once the RGB LED&#8217;s and wires are soldered, the LED Board can be tested if you have a 5V power supply (for example a LAB Power supply)</p>
+</div>
+<div class="paragraph">
+<p>When positioning the LED board as shown in the following picture, the left pin is the (common) GND pin. Insert for example a 330Ohm resistor, and supply 5V with low Amperes ( around 20mA)</p>
+</div>
+<div class="paragraph">
+<p>Connect the GND power lead to the resistor, and touch insert a thin wire into the second hole right next to where the resistor is inserted. You should see a RED LED, place the wire into the next hole beside it, and you should see a BLUE LED, connecting the positive wire to the next hole you should see a GREEN LED. Repeat this process for each other LED. For every RGB Led you must see the RED,BLUE,GREEN LED&#8217;s light up.</p>
+</div>
+<div class="paragraph">
+<p>If all the three RGB LED&#8217;s are working, the assembly of the LED Board is completed.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_assemble_the_pi_tray">Assemble the PI Tray</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Do you remember that a long, long time ago you prepared the PI Tray at the very beginning of this Hardware manual ? Well, now is the time to blow the dust of it, and start assembling the PI Tray.</p>
+</div>
+<div class="paragraph">
+<p>To assemble the PI Tray, the following is needed:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/aspt.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>1x Raspberry PI3 (or PI4)</p>
+</li>
+<li>
+<p>1x An prepared PI Tray</p>
+</li>
+<li>
+<p>1x An assembled PI Cluster HAT</p>
+</li>
+<li>
+<p>1x An assembled Power Board</p>
+</li>
+<li>
+<p>1x An assembled LED board</p>
+</li>
+<li>
+<p>1x An assemble front panel + bezel</p>
+</li>
+<li>
+<p>1x 3D printed fan holder</p>
+</li>
+<li>
+<p>4x 3D printed stand-off</p>
+</li>
+<li>
+<p>1x 5V Fan + wire + JST XH 2.54 connector</p>
+</li>
+<li>
+<p>4x M2.5x25 bolt</p>
+</li>
+<li>
+<p>5x M3x5 bolt</p>
+</li>
+<li>
+<p>2x M2x6 bolt</p>
+</li>
+<li>
+<p>2x M3x16 bolt</p>
+</li>
+<li>
+<p>2x M3 nut</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+The 2x M3x5 bolt can be replaced with 2xM3x6 bolt. Another thing to consider is to use metal M2.5 stand-off with M2.5 bolt/screw.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_place_and_attach_the_power_board_to_the_pi_tray">Place and attach the Power Board to the PI Tray</h3>
+<div class="paragraph">
+<p>The first step is to attach the Power Board. The PowerBoard should click into place:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/piapwrb.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>When the board is correctly fitted, use 3x M3x5 bolt to screw the board into place.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_place_and_attach_the_led_board_to_the_pi_tray">Place and attach the LED Board to the PI Tray</h3>
+<div class="paragraph">
+<p>Next the LED Board can be placed. The easiest way of placing the LED board, is to put it in under a angle, face the LED&#8217;s down in a angle, towards the front of the PI Tray. The LED&#8217;s should line up with the 3 holes in the front of the PI Tray. Next push the underside of the PCB into the cut-out. It should click into place. This may require some force, but don&#8217;t use to much force.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/ptpllb.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>Once the LED Board is correctly placed, use 2x M3x6 bolt to secure the board in place:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/pitalb.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_attach_the_fan_to_the_fan_holder">Attach the FAn to the FAN holder</h3>
+<div class="paragraph">
+<p>The FAN should be placed correctly on to the FAN holder. This means the FAN should suck in cool air, and blow the air against the CPU.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+To determine in which way the FAN spins, connect the 5V FAN to a 5V PSU, and use a small piece of paper. Hold this small piece of paper close to the FAN, while it&#8217;s spinning. If the piece of paper moves towards the FAN, the air is sucked in. If however the piece of paper is blown away from the FAN, the FAN is blowing air out.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>When connecting the FAN take note of the FAN holder. The FAN holder fits only in one direction:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/pitattfth.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>When the correct position of the FAN holder is determined, screw the FAN onto the FAN holder:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/pitscfth.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>Finally attach the FAN holder onto the PI Cluster Frame. Make sure that excessive wire is out of the way of the FAN</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/pitatftofhld.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_attach_the_raspberry_pi_and_pi_hat_together">Attach the Raspberry PI and PI HAT together</h3>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/apictrasp.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>To attach PI Cluster HAT onto the Raspberry PI, 4 3D printed stand-off can be used with 4x M2.5x25 bolt. However, you could also use metal stand-offs with the same height. Personally I prefer to use long screws with the 3D printed stand-offs. The funny thing is that I discovered this by accident. I didn&#8217;t had enough M2.5 metal stand-offs in stock. So I quickly sketched some PLA stand-offs, and used at that time M3x25 bolts. And I discovered that by using this construction I can simply unbolt 4 bolts, and take the hole PI assembly of the PI Tray, which make swapping a PI or an other component a breeze.</p>
+</div>
+<div class="paragraph">
+<p>Anyway: Start by pressing the PI Cluster HAT somewhat down on the 2x20 male header on the Raspberry PI. Don&#8217;t push the PI Cluster HAT all the way down. This makes inserting the 3D printed stand-offs easier:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/pitist.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>Insert the 4x 3D printed stand-offs and 4x bolts.</p>
+</div>
+<div class="paragraph">
+<p>Place the whole assembly of the Raspberry PI and the Pi Cluster HAT onto the PI Tray, align the holes with the four bolts.  Press the PI CLuster HAT down onto the Raspberry PI (if you not had done this already)</p>
+</div>
+<div class="paragraph">
+<p>Screw the assembly into place. Make sure the power cable on the back is not between the Raspberry PI and the SD card holder, by making sure the power cable is guided along the corner:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/pwcat.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>Connect all the wires:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Connect FAN wire</p>
+</li>
+<li>
+<p>Connect Power wire</p>
+</li>
+<li>
+<p>Connect the RG wire</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_attach_the_front_panel">Attach the front panel</h3>
+<div class="paragraph">
+<p>The last step is to attach the front panel to the PI Tray using 2x M3x5 bolt:</p>
+</div>
+<div class="paragraph">
+<p>Slide the front panel onto the PI tray:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/pitatfrp.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>Secure the front panel into place with two screws:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/pitsfp.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+<div class="paragraph">
+<p>The finished PI Tray should look like this:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/images/fpiha.jpg" alt="Components needed for PCB assembly" width="245" height="150">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_building_the_frame">Building the frame</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>To build 1 cluster frame, the following is needed:</p>
 </div>
@@ -879,11 +1846,314 @@ During development a back-plane shim is used. This will no longer be needed in p
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_parts_list_introduction">Parts List introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The complete parts lists contains per main components the parts needed.
+The main components of the PI Cluster frame are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>PI Cluster Frame</p>
+</li>
+<li>
+<p>PI Tray</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Per main components the list is divided into</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Hardware</p>
+</li>
+<li>
+<p>PCB</p>
+</li>
+<li>
+<p>Electronic parts needed.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The lists contains all the parts which are needed to build the intended design. However, the design is modular and flexible. Which means there are more then one way to build the PI cluster frame.</p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Not using any connectors, and solder the wires directly to the PCB&#8217;s.</p>
+</li>
+<li>
+<p>Instead of using M2.5 screws, M3 screws can be used, by filing out the Raspberry PI mounting holes.</p>
+</li>
+<li>
+<p>Instead of using M2.5x25mm bolts, M2.5 stand-offs with screws can be used to mounbt the PI Cluster HAT onto the Raspberry PI</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The complete parts list however doesn&#8217;t take these variants into account.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_complete_parts_list">Complete Parts List</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+List is provided AS IS. List may contain errors.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_pi_tray">PI Tray</h3>
+<div class="paragraph">
+<p>Parts needed to build 2 Pay tray&#8217;s and 1 PI Cluster frame (which holds 2 PI&#8217;s)</p>
+</div>
+<div class="sect3">
+<h4 id="_hardware">Hardware</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>8x M2.5 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT</p>
+</li>
+<li>
+<p>18x M3 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT</p>
+</li>
+<li>
+<p>8x M2.5x25</p>
+</li>
+<li>
+<p>14x M3x5</p>
+</li>
+<li>
+<p>8x M3x10</p>
+</li>
+<li>
+<p>8x M3x14</p>
+</li>
+<li>
+<p>8x M3 nut</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_pcbs">PCBs</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>2x Fully assembled PI Cluster HAT</p>
+</li>
+<li>
+<p>2x Fully assembled PowerBoard</p>
+</li>
+<li>
+<p>2x Fully assembled LEDBoard</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pi_cluster_hat">PI Cluster HAT</h3>
+<div class="paragraph">
+<p>Parts needed to assemble 2x PI Cluster HAT</p>
+</div>
+<div class="sect3">
+<h4 id="_electronic_components">Electronic Components</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>18x SMD 0805 330 Ohm resistor</p>
+</li>
+<li>
+<p>2x SMD 0805 1K Ohm resistor</p>
+</li>
+<li>
+<p>4x SMD 0805 3.9K Ohm resistor</p>
+</li>
+<li>
+<p>2x SMD SOIC-8 CAT24C32 EEPROM</p>
+</li>
+<li>
+<p>2x SMD SOT-23 NDS351N Logic Level Mosfet</p>
+</li>
+<li>
+<p>2x Litle Fuse  SMD 1206</p>
+</li>
+<li>
+<p>2x 1x 25x25 5V FAN with 2 pins JST XH 2.54 connector</p>
+</li>
+<li>
+<p>2x JST XH 2.54 10 PINS connector</p>
+</li>
+<li>
+<p>4x JST XH 2.54 2 PINS connector</p>
+</li>
+<li>
+<p>2x JST XH 2.54 90 degree angel JST XH 2.54 10 pins connector + 10CM cable (pre crimped)</p>
+</li>
+<li>
+<p>2x JST XH 2.54 straight JST XH 2.54 2 pins connector + 10CM cable (pre crimped)</p>
+</li>
+<li>
+<p>2x SparkFun GPIO 2x20 Female header</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Recently the NDS331N became obsolete. Replacement: SSM3K344R, package is different (SOT-23F-3). Same footprint as SOT23
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_pcb">PCB</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>2x PI Cluster HAT PCB</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_power_board">Power Board</h3>
+<div class="paragraph">
+<p>Parts needed to build 2 Power Boards</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>4x 2x3 rows 2.54 pitch female header</p>
+</li>
+<li>
+<p>2x Pre-crimped JST XHT 2.54mm connector</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_pcb_2">PCB</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>2x Power Board PCB</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_led_board">LED Board</h3>
+<div class="paragraph">
+<p>Parts needed to build 2 LED Boards:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>6x RGB LED 5MM</p>
+</li>
+<li>
+<p>2x JST XHT 2.54 10 pins connector pre-crimped.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_pcb_3">PCB</h4>
+<div class="paragraph">
+<p>2x LED Board PCB</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_1x_pi_cluster_frame">1x PI Cluster Frame</h3>
+<div class="paragraph">
+<p>One PI cluster Frame holds 2 PI trays</p>
+</div>
+<div class="sect3">
+<h4 id="_hardware_2">Hardware</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>12x M3 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT</p>
+</li>
+<li>
+<p>4x M3x10</p>
+</li>
+<li>
+<p>4x M3x25</p>
+</li>
+<li>
+<p>4x M3 threaded rod</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+rod length based on the number of PI frames. Max 19" for 5 PI frames (10 nodes) For 1 PI frame (which holds 2 PI nodes) rod length is +/- 90mm
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_pcbs_2">PCBs</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>1x Backplane</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_electronic_components_2">Electronic Components</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>2x 2x3 male header</p>
+</li>
+<li>
+<p>Enough thick isolated copper wire to connect the backplane + 5V power supply</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2020-11-21 19:03:34 +0100
+Last updated 2020-12-01 00:10:13 +0100
 </div>
 </div>
 </body>
