@@ -9,7 +9,6 @@ To build 1 cluster frame, the following is needed:
 - 1x front-plate
 - 1x connecting rod left
 - 1x connecting rod right
-- 1x back-plane shim (more on that later on)
 - 1x back-plane PCB
 - 6x Brass press insert M3
 - 2x M3x10
@@ -20,8 +19,6 @@ The first step is to 3D print all the parts. When building a frame for 10 nodes 
 The 3D printed parts needed to complete one half of the frame are shown in the picture below:
 
 image::cras.jpg["Buildimage",{fullWidth},{fullHeight}]
-
-The attribute fullWidth is set to {fullWidth}
 
 NOTE: During development a back-plane shim is used, shown on the picture. This is no longer needed.
 
