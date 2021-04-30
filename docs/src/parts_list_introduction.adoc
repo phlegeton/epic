@@ -17,7 +17,7 @@ For example:
 
 - Not using any connectors, and solder the wires directly to the PCB's. 
 - Instead of using M2.5 screws, M3 screws can be used, by filing out the Raspberry PI mounting holes. 
-- Instead of using M2.5x25mm bolts, M2.5 stand-offs with screws can be used to mounbt the PI Cluster HAT onto the Raspberry PI
+- Instead of using M2.5x25mm bolts, M2.5 stand-offs with screws can be used to mount the PI Cluster HAT onto the Raspberry PI
 
 The complete parts list however doesn't take these variants into account. 
 
