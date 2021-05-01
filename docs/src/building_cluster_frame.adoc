@@ -6,26 +6,179 @@ include::./{includesdir}/document_settings.adoc[]
 To build 1 cluster frame, the following is needed:
 
 - 1x backplate
-- 1x front-plate
-- 1x connecting rod left
-- 1x connecting rod right
+- 2x front-plate
+- 2x connecting rod left
+- 2x connecting rod right
 - 1x back-plane PCB
-- 6x Brass press insert M3
-- 2x M3x10
-- 2x M3x25
+- 8x Brass press insert M3
+- 4x M3x10
+- 4x M3x25
 
+=== Prepare the frame and place all the press inserts
 The first step is to 3D print all the parts. When building a frame for 10 nodes this is a process that can take several days to complete. It's also possible to print the parts for 2 nodes (so one frame at the time). And extend the frame in the course of a few days. 
 
-The 3D printed parts needed to complete one half of the frame are shown in the picture below:
+The 3D printed parts needed to assemble one complete frame are shown in the picture below:
 
 image::cras.jpg["Buildimage",{fullWidth},{fullHeight}]
 
-NOTE: During development a back-plane shim is used, shown on the picture. This is no longer needed.
+Before starting the assembly, make sure to deburr all the edges. Next place the brass press inserts into both sides of the connecting rods using a hot conical tip from a soldering iron and gently press the inserts into the hole: 
 
-Before starting the assembly, make sure to deburr all the edges. Next place the brass press inserts into both sides of the connecting rods and use a hot conical tip from a soldering iron the gently press the inserts into the hole. Make sure that the insert is level with the surface. So that the insert isn't sticking out, and make sure don't press the insert to deep. 
+image::rai.jpg["Buildimage",{fullWidth},{fullHeight}]
 
-Also make sure that the press insert is inserted straight. Inserting the press insert on a slightly angle will cause the frame to be out of alignment. 
+Make sure that the insert is level with the surface. So that the insert isn't sticking out, and make sure don't press the insert to deep.  Also make sure that the press insert is inserted straight. Inserting the press insert on a slightly angle will cause the frame to be out of alignment.  Once all the sides are done (four in total) the next step is to press the two remaining inserts into the top holes of the front plate: 
 
-Once the insert are pressed in, press the two remaining inserts into the top holes of the front plate. 
- 
+image::pif.jpg["Buildimage",{fullWidth},{fullHeight}]
+
+=== Put the frame together
+Once all the press inserts are placed, the frame can be put together. This can be a bit tricky. The tricky part is to get the orientation of the connecting rods right. If the connection rods are examined closely there are two things to be noticed: 
+
+. One connecting rod is somewhat smaller then the other
+. At one end the corner has a little gap in it.  
+
+This is done to make identifying the connecting rods somewhat easier. The next image shows the gap at the end of the rod.
+
+image::pcr.jpg["Buildimage",{fullWidth},{fullHeight}]
+
+This gap is there to allow a M3 metal rod connect all the clusters frame together. So this is the "back end". Place the front plate. Note the smaller rod (seen from the front) goes left, and the slightly thicker rod goes on the right. Make sure the guiders are facing inward, and downwards:. The gap at each end of the rod should face outwards:  
+
+image::asfcr.jpg["Buildimage",{fullWidth},{fullHeight}]
+
+Use 2x M3x25 to screw the front plate in place. 
+
+Next place the backplate. The screws used for now are temporarily, for now it's just to hold the frame together. The frame should now look like as shown on the next image: 
+
+image::acrfcmp.jpg["Buildimage",{fullWidth},{fullHeight}]
+
+Now repeat the above steps to complete the second half of the PI Cluster frame. 
+
+=== Testing the PI Cluster frame
+Once both frames are build, completing one PI Cluster frame, the frame can be tested. This test is done to make sure a PI tray can slide in and out of both of frames. If the PI tray's don't slide easy look for burrs and deburr the edges were needed. 
+
+First test by sliding a fully assembled PI tray back and forth, there should be little to none friction. If the PI tray must be forced, something is not right. 
+
+image::tcrfr.jpg["Buildimage",{fullWidth},{fullHeight}]
+
+Also test if the PI tray can be inserted fully. The front plate should be flat, and nothing should stick out of the front: 
+
+image::tcrfr2.jpg["Buildimage",{fullWidth},{fullHeight}]
+
+Once all the test are completed, and everything is working fine, the back-plane can be attached.
+
+=== Attaching the back-plane
+Attaching the back-plane can be tricky and somewhat fiddly. The back plane purpose is the distribute power and other signals. The connectors on the back-plane must therefore mate perfectly with the connectors on the PI tray. This alignment can be tricky. Luckily there are some tricks to get it right. The mounting holes in the back-plane for example are slightly larger, so there is some wiggle room. 
+
+The next method is exploiting this 'extra wiggle room'
+
+The align the connectors you need:  
+
+- 2x fully assembled PI tray
+- 4x male 2x3 2.54 (.001 inch) pitch connector
+
+The first step is to insert the 2x3 male connectors into the female 2x3 connecters on the back of the PI tray: 
+
+image::pcnprt.jpg["Buildimage",{fullWidth},{fullHeight}]
+
+As can be seen on the picture above make sure that the long pins goes into the connectors on the PI tray, and that the short pins are sticking out.
+
+Next place the back-plane onto the cluster frame. Make sure to unscrew the four temporarily screws on the back. You need this four screws to hold the back-plane temporarily into place. 
+
+Position the back-plane as shown in the picture: 
+
+image::psbkpl.jpg["Buildimage",{fullWidth},{fullHeight}]
+
+place the back-plane onto the frame and screw it into place. However, don't tighten the screws too tight. The back-plane should be easy to move around, with being to loose. 
+
+It should look like this: 
+
+image::bckpld.jpg["Buildimage",{fullWidth},{fullHeight}]
+
+Now place on of the PI tray's into one of the frames, and gently push it against the backplane, if needed gently move the back-plane around, and wiggle the PI tray till the connectors align with the back-plane. You should see the connector pins sticking out of the backplane: 
+
+image::algcntbkp.jpg["Buildimage",{fullWidth},{fullHeight}]
+
+While keeping the PI tray into place, secure the PI tray with 2x M3x10 in place. And repeat the step above for the other PI tray. 
+
+Once the connectors are aligned for both of the PI trays, tighten the screws of the back-plane, so that the back-plane is held in to place. The last step is to solder the pins onto the backplane. Once the pins are soldered, the PI trays could be loosened by unscrewing the two front screws. The PI trays should not slide out of the frame, and by reinserting the PI frame, the connectors should align with the back-plate connectors without any problems. 
+
+=== Power supply considerations
+Before connecting the backplane, and bringing the PI cluster up and running, there is the small matter of getting a power supply. The most likely this will be a Switch Mode Power Supply (SMPS). The things to consider for buying a SMPS are the following: 
+
+. Make sure the SMPS outputs 5V and ideal is adjustable to for example 5.1V
+. MAke sure the SMPS can handle the load. That is: The SMPS must be able to deliver the Amperes. Buy a SMPS which can deliver a few Amp more then required.
+. Don't buy the cheapest SMPS you can get. Make sure the SMPS is safe to use, and is of good quality. 
+. Check the power consumption of the PI model(s) which are going to be used in the PI Cluster Frame
+
+When building a one frame cluster (thus two PI nodes) the SMSPS doesn't have to be very beefy. However if you want to expand the PI Cluster Frame from two PI's to let's 4 or of 8 or even 10 PI's it might be better to buy a PSU which can support this expansion. To give an idea, for a 10 node cluster with PI3's I use a 5V 26A SMPS (Mean Well RS-150-5) .
+
+See the the section below on the Amperes and requirements.
+=== Connecting the backplane
+The backplane connects to a 5V power supply, and distributes the power to all the nodes in the cluster. When using more then one frame (thus more then two PI tray's) the backplane must be connected together. This can be done in two ways: 
+
+- Connect the backplanes in series
+- Connect the backplanes in parallel
+
+The image below shows how the backplanes can be connected:  
+
+image::backplane_connections.jpg["Buildimage",600,600]
+
+The "secondary connection" can be made to decrease the possible voltage drop due to the wiring.
+
+When connecting the back-planes, the goal is to minimize the voltage drop. This voltage drop is caused by the wiring, and the back-plane itself, and the connections to the PI tray's (thus the PI nodes). The Raspberry PI operates at 5V, and doesn't cope very well with voltages below 5V. For example 4.9V might not be a problem, but 4.63V (+/- 5%) will definitely give problems. 
+
+The rule of the thumb is: The thicker the wire, the less voltage drop. Think of Ohm's law: if every piece of copper and connection is considered as a resistor, a voltage drop occurs across the resistor. By dropping the resistance, less voltage drop. Another thing which comes into play is the amount of current. For higher amount of current, thicker wire is needed. If the wire is to thin, it would get very hot, and can even burst into flames. And you might think.. well these are little Raspberry PI's.. so that's not a issue. For two Raspberry PI's it might not, but if you connect 10 of them.. it becomes a issue. To keep it simple: let's say one PI node consumes 1 Ampere , now if we multiply that with 10 nodes.. it's 10 Ampere.. And now think about what a Raspberry PI3 or PI4 is able to consume. Let's say 2 Ampere.. that would mean 10x2 = 20 Ampere.. Luckily we can reduce these numbers. 
+
+By connecting the backplane in series, the idea is that each backplane (which holds two PI's) can only consume at max 2x3A = 6A (For a Raspberry PI 4 Model B). However, for a Raspberry PI Model 3(A+B), and model 4B the maximum total USB peripheral current draw is 1.2A. This reduces the previous calculation to 2x.1.2A = 2.4A. Looking at a average consumption it's about 500mA for a Raspberry PI3 B+, and for a PI4 B it's about 600mA. So if we calculate on 600mA for two Pi's it's: 2x 0.6 = 1,2A. 
+
+The numbers above are taken from: https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/README.md 
+
+The moral of the story is: 
+
+- Don't underestimate the current needed.
+- When connecting the backplanes, and depending on the amount of nodes in the cluster make sure to have a Power Supply (PSU) which can deliver enough Amperes
+- Connect the backplanes in series. This might be more challenging to connect all the wires to one central connector. However this decreases the voltage drop
+- Use a XT60 as a central connector to supply the main 5V. These connectors are able to handle the amount of current.
+
+When connecting the backplanes in parallel (not recommended):  
+
+- make sure to use thick wires.
+- If possible connect the backplanes with two wires, the decrease the voltage drop.
+
+=== Testing the PI Cluster Frame
+Once the backplane are connected, perform the following test before applying power: 
+
+- Remove all PI trays (PI nodes) from the chassis 
+- With a Multimeter in continuity mode check for shorts on the back-plane. For example: start by testing between the pins of the XT60 connector
+- Check each back-plane for shorts. 
+- Next when no shorts are detected (or all are fixed) without any PI node in the cluster chassis, apply 5V to the cluster chassis
+- Measure the voltage on each backplane 5V connector
+
+When everything looks okey: 
+
+- Use a lab power supply (if possible and limit the current to 600mA)
+- Insert one PI tray into the chassis. 
+- Apply power and see if the PI node starts without problems. 
+- Measure the voltage on the other pins on the back-plane
+
+Once everything is okey insert the second PI node, let it boot. And after each successfully power up of a node, insert the next PI node until the whole chassis is populated and all nodes are booted. 
+
+=== Attaching the backplane covers 
+If the cluster frame is able to power all the PI nodes, the back-plane covers can be placed.
+
+For every back-plane you need a cover
+Fro every back-plane cover you need 4x M3x30 screw
+
+To place the the cover make sure all the PI nodes are powered off. And no 5V is applied to the chassis.
+
+The easiest way to place the backplane covers is to place the cover, back-plane by back-plane: 
+
+- Unscrew the four temporarily screws
+- Place the backplane cover
+- Use 4x M3x30 screws to fasten the backplane cover
+
+Repeat this for every back-plane
+
+
+
+
+
 

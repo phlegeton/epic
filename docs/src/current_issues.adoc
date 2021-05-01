@@ -22,6 +22,8 @@ In the development version *{development_version_beta}* the back-plane connector
 
 Severity: *HIGH* : Currently it is not advised to manufacture the PI Cluster back-plane PCB's until this issue is fixed or completely tested. 
 
+*SOLVED* Issue is resolved in the current *{current_version}* The alignment of the connectors is not perfect yet, but with the procedure explained in the  <<Attaching the back-plane>> section the alignment shouldn't be a problem. 
+
 === The PI Cluster HAT hardware problem, causing the MOSFET to be none functional
 In the version: *{development_version_beta}* of the PI Cluster HAT the MOSFET is wired wrong. Causing the cooling FAN always to spin at full speed. The fix is already applied, and push to the repository. However when using the *{development_version_beta}* there is any fix, by cutting two traces on the PCB, and solder two bodge wires:
 
