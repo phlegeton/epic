@@ -143,6 +143,8 @@ When connecting the backplanes in parallel (not recommended):
 - make sure to use thick wires.
 - If possible connect the backplanes with two wires, the decrease the voltage drop.
 
+The connections of the back-plane connect to one XT60 connector which is mounted on a back-plane cover. See the section <<Attaching the backplane cover>>
+
 === Testing the PI Cluster Frame
 Once the backplane are connected, perform the following test before applying power: 
 
@@ -161,21 +163,7 @@ When everything looks okey:
 
 Once everything is okey insert the second PI node, let it boot. And after each successfully power up of a node, insert the next PI node until the whole chassis is populated and all nodes are booted. 
 
-=== Attaching the backplane covers 
-If the cluster frame is able to power all the PI nodes, the back-plane covers can be placed.
 
-For every back-plane you need a cover
-Fro every back-plane cover you need 4x M3x30 screw
-
-To place the the cover make sure all the PI nodes are powered off. And no 5V is applied to the chassis.
-
-The easiest way to place the backplane covers is to place the cover, back-plane by back-plane: 
-
-- Unscrew the four temporarily screws
-- Place the backplane cover
-- Use 4x M3x30 screws to fasten the backplane cover
-
-Repeat this for every back-plane
 
 
 
