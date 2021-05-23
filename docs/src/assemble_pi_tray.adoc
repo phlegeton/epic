@@ -73,7 +73,7 @@ Place the whole assembly of the Raspberry PI and the Pi Cluster HAT onto the PI 
 
 Screw the assembly into place. Make sure the power cable on the back is not between the Raspberry PI and the SD card holder, by making sure the power cable is guided along the corner:
 
-image::pwcat.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+image::pwcat.jpg[Power cable,{fullWidth},{fullHeight}]
 
 Connect all the wires: 
 
@@ -86,14 +86,14 @@ The last step is to attach the front panel to the PI Tray using 2x M3x5 bolt:
 
 Slide the front panel onto the PI tray:
 
-image::pitatfrp.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+image::pitatfrp.jpg[Place front panel,{fullWidth},{fullHeight}]
 
-Secure the front panel into place with two screws:
+Secure the front panel into place with two screws, one at each side:
 
-image::pitsfp.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+image::pitsfp.jpg[secure front panel{fullWidth},{fullHeight}]
 
 
 The finished PI Tray should look like this:
 
-image::fpiha.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+image::fpiha.jpg[Finished PI tray,{fullWidth},{fullHeight}]
 
