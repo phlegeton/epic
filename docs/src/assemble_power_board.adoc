@@ -13,7 +13,7 @@ Materials needed:
 - 1x JST pre-crimped connectors
 - 1x 3D printed Connector alignment tool
 
-image::pbas.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+image::pbas.jpg[Components needed for PowerBoard PCB assembly,{fullWidth},{fullHeight}]
 
 
 NOTE: The JST XT 2.54 connectors can be bought pre-crimped. However the copper pairs, or most likely to be very thin, causing a severe power drop.
@@ -23,11 +23,11 @@ TIP: Before assembly make sure to print the alignment tool from the extra folder
 
 Start by inserting the 2x 2x3 2.54 female headers in the alignment tool like this:
 
-image::use_of_alt.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+image::use_of_alt.jpg[Using the PowerBoard helper tool,{fullWidth},{fullHeight}]
 
 Next place the Power Board PCB with the silkscreen facing down. Make sure to align the PCB and the connectors with the most outer holes, so the PCB should be roughly in the center of the alignment tool. Press the PCB down, so it sits flat with the surface of the alignment tool:
 
-image::pcb_placement_alt.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+image::pcb_placement_alt.jpg[Align PCB,{fullWidth},{fullHeight}]
 
 Solder the connectors onto the PCB, and once the connectors are soldered remove the PCB gently from the alignment tool.
 
@@ -37,7 +37,7 @@ image::cptl.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
 
 The last step is to solder the wire onto the PCB. Make sure to solder the wire on the back of the PCB, and also make sure to get the polarity right: solder the RED (+) onto the plus (+) on the PCB:
 
-image::polarity_pwc.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+image::polarity_pwc.jpg[Solder wire onto the PowerBoard PCB,{fullWidth},{fullHeight}]
 
 The finished Power Board should look like this:
 

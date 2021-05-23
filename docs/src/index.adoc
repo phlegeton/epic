@@ -19,11 +19,15 @@ toc::[]
 
 include::introduction.adoc[]
 
+include::a_word_about_license.adoc[]
+
 include::design_goals.adoc[]
 
 include::current_issues.adoc[]
 
 include::roadmap.adoc[]
+
+include::3d_printing_the_parts.adoc[]
 
 include::preparing_pi_tray.adoc[]
 

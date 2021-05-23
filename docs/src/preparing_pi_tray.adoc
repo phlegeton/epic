@@ -25,15 +25,13 @@ or:
 
 Both options will work, as long the brass press inserts require a hole of +/- 4mm (And they should)
 
-In this document the puristic path is chosen, just because this is how the design was intended. 
+In this document the 'puristic' path is chosen and is using M2.5 and M3 brass inserts, just because it can and this is how the design was intended. Of course the downside of this approach is that more different type of screws are needed, which can be more expensive, and may make maintenance harder, since different screwdrivers are needed.
 
 image::pitp1.jpg["Buildimage",{fullWidth},{fullHeight}]
 
 The easiest way of prepare the PI Tray is to start with the M2.5 brass inserts, by inserting them into the 4 holes and press them in the four holes by using a hot soldering iron. 
 
 Next the M3 brass inserts can be inserted. Make sure not to melt the PLA when inserting the brass press inserts for the power board. And alo keep in mind, the brass press inserts for the LED board are inserted from the front. Trying to this the other way around, will for sure damage the PI Tray beyond any repair. 
-
-image::pitp2.jpg["Buildimage",{fullWidth},{fullHeight}]
 
 TIP: Use a long screw (for example a M3x20mm) to position the brass press inserts. Just insert the screw one thread, so the screw can be easily removed.
 

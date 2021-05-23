@@ -3,7 +3,7 @@
 include::./{includesdir}/document_settings.adoc[]
 
 
-== Attaching the backplane cover
+=== Attaching the backplane cover
 If the cluster frame is able to power all the PI nodes, the back-plane covers can be placed.
 
 To attach the back-plane cover you need: 

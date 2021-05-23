@@ -22,29 +22,36 @@ In the development version *{development_version_beta}* the back-plane connector
 
 Severity: *HIGH* : Currently it is not advised to manufacture the PI Cluster back-plane PCB's until this issue is fixed or completely tested. 
 
-*SOLVED* Issue is resolved in the current *{current_version}* The alignment of the connectors is not perfect yet, but with the procedure explained in the  <<Attaching the back-plane>> section the alignment shouldn't be a problem. 
+*SOLVED* Issue is resolved in the current version *{current_version}* The alignment of the connectors is not perfect yet, but with the procedure explained in the  <<Attaching the back-plane>> section the alignment shouldn't be a problem. 
 
 === The PI Cluster HAT hardware problem, causing the MOSFET to be none functional
-In the version: *{development_version_beta}* of the PI Cluster HAT the MOSFET is wired wrong. Causing the cooling FAN always to spin at full speed. The fix is already applied, and push to the repository. However when using the *{development_version_beta}* there is any fix, by cutting two traces on the PCB, and solder two bodge wires:
+In the version: *{development_version_beta}* of the PI Cluster HAT the MOSFET is wired wrong. Causing the cooling FAN always to spin at full speed. The fix is already applied, and push to the repository. However when using the *{development_version_beta}* there is an easy fix, by cutting two traces on the PCB, and solder two bodge wires:
 
 image::pichfix.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
 
-Severity: *Medium* Issue is already solved, and is fixable in the {current_version}
+Severity: *Medium* Issue is  solved and tested in the current version {current_version}
 
-=== Polarity markings on some PCB silkscreen are missing or are misplace
+=== Polarity markings on some PCB silkscreen are missing or are misplaced
 Overall there is a lot of work to be done to get the silkscreens of the PCB to have prober markings. In the next versions this issue is going to be addressed.
 
 Severity: *LOW* This is just an inconvenience, care should be taken when soldering wires / connectors for example. 
 
+Solved in the current version {current_version}
+
 === Not easy to enable EEPROM write
-To be able to program the EEPROM, the test points TP1 needs to be shorted together. This now requires a 0 ohm 0805 SMD resistor, ar a small piece of wire. This needs to be fixed, so a jumper can be placed.  
+To be able to program the EEPROM, J9 pins needs to be shorted together. This now requires a 0 ohm 0805 SMD resistor, ar a small piece of wire. This needs to be fixed, so a jumper can be placed.  
 
 Severity: *LOW* This is just an inconvenience. 
+
+Solved in the current version {current_version}
 
 === The documentation is not fully completed yet
 The documentation is becoming more and more complete, however it still needs a lot of work. 
 
 Severity: *HIGH* Documentation is required to be able to build the PI Cluster Frame. 
+
+Solved in the current version {current_version}
+However the documentation can (and properly will) contains errors.
 
 === When using a PI4 it's difficult to remove the Ethernet cable
 When a Pi4 is used in a Pi Tray the Ethernet port is on the right side instead of the left side. On the left side there is a small cut-out, so it's easier to remove a ethernet cable. However this cut-out is not available on the right side. Making it difficult to detach a ethernet cable.
