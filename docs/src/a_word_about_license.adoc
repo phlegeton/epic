@@ -1,0 +1,6 @@
+=== A word about license
+This Frame cluster and PCB's are free to everyone to use share and alter. Since I use closed source programs, like Fusion 360, Diptrace (for schematic, and PCB's) I cannot call this true open hardware. Therefore this PI Cluster Frame is licensed under a Creative Commons Attribution Share-Alike license. 
+
+You can find the license here: http://creativecommons.org/licenses/by-sa/3.0/
+
+Also see the license file LICENSE.TXT in the root of the repository.
