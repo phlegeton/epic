@@ -1,4 +1,4 @@
 :fullWidth: 245
 :fullHeight: 150 
-:development_version_beta: 2.0 Hades Edition
-:current_version: 3.0 pre-release
+:development_version_beta: 0.99 (Internal release Hades 2.0)
+:current_version: 1.0
