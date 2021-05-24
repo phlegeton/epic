@@ -124,6 +124,7 @@ Before connecting the backplane, and bringing the PI cluster up and running, the
 When building a one frame cluster (thus two PI nodes) the SMSPS doesn't have to be very beefy. However if you want to expand the PI Cluster Frame from two PI's to let's 4 or of 8 or even 10 PI's it might be better to buy a PSU which can support this expansion. To give an idea, for a 10 node cluster with PI3's I use a 5V 26A SMPS (Mean Well RS-150-5) .
 
 See the the section below on the Amperes and requirements.
+
 === Connecting the backplane
 The backplane connects to a 5V power supply, and distributes the power to all the nodes in the cluster. When using more then one frame (thus more then two PI tray's) the backplane must be connected together. This can be done in two ways: 
 
