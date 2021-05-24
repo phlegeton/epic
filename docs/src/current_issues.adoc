@@ -4,7 +4,7 @@ include::./{includesdir}/document_settings.adoc[]
 
 
 == Current issues
-The current PI Cluster version is still in the development phase. This means there are some issues. So before building the PI Cluster Frame, you may take a look at the current known issues. 
+The current PI Cluster version is still in the development phase. This means there are some issues. So before building the PI Cluster Frame, you may take a look at the current known issues. However the cluster frame itself is fully working. 
 
 NOTE: Currently the PI Cluster frame (version: {current_version}) is at a point that it is useful. There are however some issues that needs to be addressed:
 
