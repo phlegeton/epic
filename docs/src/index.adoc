@@ -49,11 +49,13 @@ include::assemble_pi_tray.adoc[]
 
 include::building_cluster_frame.adoc[]
 
+include::attach_backplane_cover.adoc[]
+
 include::parts_list_introduction.adoc[]
 
 include::complete_parts_list.adoc[]
 
-include::attach_backplane_cover.adoc[]
+
 
 
 
