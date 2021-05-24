@@ -7,8 +7,8 @@ To build 1 cluster frame, the following is needed:
 
 - 1x backplate
 - 2x front-plate
-- 2x connecting rod left
-- 2x connecting rod right
+- 2x connecting rod left (or with two nodes 2x M3 press insert and 2x M3x50)
+- 2x connecting rod right (or with two nodes 2x M3 press insert and 2x M3x50)
 - 1x back-plane PCB
 - 8x Brass press insert M3
 - 4x M3x10
@@ -99,6 +99,18 @@ image::algcntbkp.jpg["Buildimage",{fullWidth},{fullHeight}]
 While keeping the PI tray into place, secure the PI tray with 2x M3x10 in place. And repeat the step above for the other PI tray. 
 
 Once the connectors are aligned for both of the PI trays, tighten the screws of the back-plane, so that the back-plane is held in to place. The last step is to solder the pins onto the backplane. Once the pins are soldered, the PI trays could be loosened by unscrewing the two front screws. The PI trays should not slide out of the frame, and by reinserting the PI frame, the connectors should align with the back-plate connectors without any problems. 
+
+=== Attach the frames together
+Once the backplane is placed, and the PI nodes are fitting perfectly, and can be slide in and out , the frame can be screwed together. This is done by using M3 Rod which needs to be cut to length. This can be done by using a dremel tool for example. Measure the length of of the rod to cut, and cut four equal sizes. Push the rod trough the holes in one of the corners of the frame. Once the rod is pushed all the way trough, place a M3 nut on both side, and tighten up the nuts, but not to tight. Replace this process for the rest of the three corners. 
+
+When using only two nodes, it's possible to use 4 press M3 inserts and 4x M3x50. Note however that expanding the frame is no longer possible. To connect the frames with screws: 
+
+image::frwpris.jpg["place the press inserts",{fullWidth},{fullHeight}]
+
+screw the frames together
+image::scfrtg.jpg["srew fram together",{fullWidth},{fullHeight}]
+
+If however the frame must be extensible, it's better to measure the needed length of four M3 rods, and use 4x M3 nuts to bolt the frame together.
 
 === Power supply considerations
 Before connecting the backplane, and bringing the PI cluster up and running, there is the small matter of getting a power supply. The most likely this will be a Switch Mode Power Supply (SMPS). The things to consider for buying a SMPS are the following: 
