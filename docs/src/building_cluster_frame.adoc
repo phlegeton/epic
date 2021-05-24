@@ -152,30 +152,12 @@ The moral of the story is:
 - Connect the backplanes in series. This might be more challenging to connect all the wires to one central connector. However this decreases the voltage drop
 - Use a XT60 as a central connector to supply the main 5V. These connectors are able to handle the amount of current.
 
-When connecting the backplanes in parallel (not recommended):  
+When connecting the backplanes in series (not recommended):  
 
 - make sure to use thick wires.
 - If possible connect the backplanes with two wires, the decrease the voltage drop.
 
 The connections of the back-plane connect to one XT60 connector which is mounted on a back-plane cover. See the section <<Attaching the backplane cover>>
-
-=== Testing the PI Cluster Frame
-Once the backplane are connected, perform the following test before applying power: 
-
-- Remove all PI trays (PI nodes) from the chassis 
-- With a Multimeter in continuity mode check for shorts on the back-plane. For example: start by testing between the pins of the XT60 connector
-- Check each back-plane for shorts. 
-- Next when no shorts are detected (or all are fixed) without any PI node in the cluster chassis, apply 5V to the cluster chassis
-- Measure the voltage on each backplane 5V connector
-
-When everything looks okey: 
-
-- Use a lab power supply (if possible and limit the current to 600mA)
-- Insert one PI tray into the chassis. 
-- Apply power and see if the PI node starts without problems. 
-- Measure the voltage on the other pins on the back-plane
-
-Once everything is okey insert the second PI node, let it boot. And after each successfully power up of a node, insert the next PI node until the whole chassis is populated and all nodes are booted. 
 
 
 
