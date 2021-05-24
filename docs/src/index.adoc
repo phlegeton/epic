@@ -10,20 +10,28 @@ ifdef::env-github[]
 endif::[]
 :toc:
 :toc-placement!: 
-= Main Index 
+= Extensible PI Cluser Frame - Hardware guide
 Hades <hades@spacebugs.nl>
 v1.0, 2020-28-11
 include::./{includesdir}/document_settings.adoc[]
 
+image::crnex.jpg[Two node cluster,{fullWidth},{fullHeight}]
+
+== Main index
+
 toc::[]
 
 include::introduction.adoc[]
+
+include::a_word_about_license.adoc[]
 
 include::design_goals.adoc[]
 
 include::current_issues.adoc[]
 
 include::roadmap.adoc[]
+
+include::3d_printing_the_parts.adoc[]
 
 include::preparing_pi_tray.adoc[]
 
@@ -45,11 +53,15 @@ include::assemble_pi_tray.adoc[]
 
 include::building_cluster_frame.adoc[]
 
+include::attach_backplane_cover.adoc[]
+
+include::testing_pi_cluster_frame.adoc[]
+
 include::parts_list_introduction.adoc[]
 
 include::complete_parts_list.adoc[]
 
-include::attach_backplane_cover.adoc[]
+
 
 
 

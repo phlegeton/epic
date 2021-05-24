@@ -11,7 +11,7 @@ To attach the back-plane cover you need:
 - 1x XT60 connector 
 - 2x M2.5x10
 - For every back-plane you need one cover
-- For every back-plane cover you need 4x M3x30 screw
+- For every back-plane cover you need 4x M3x40 screw
 
 === Prepare the back-plane cover
 One of the back-plane cover is holding the XT60 connector, so there is one 5V connection which powers the whole PI cluster: 
@@ -30,13 +30,30 @@ image::bckplcvrfsn.jpg[{fullWidth},{fullHeight}]
 === Power connections
 The backplane cover connects the power to the whole PI Cluster. So a cable is needed to connect the SMPS to the backplane. And from the XT60 connectors connections need to be made to the back-plane(s). See the discussion in the section <<Connecting the backplane>> about how to connect the back-plane(s)
 
+If there are any test wires, remove them from the backplane. And attach the definite wires. When connecting the backplanes in parallel a wire like: 
+
+image::bppw.jpg[{fullWidth},{fullHeight}]
+
+Can be made (This is just a example) Each black/red wire pair is soldered to a backplane.
+
+When using a two node cluster, solder the wires onto the backplane:
+
+image::swtbckpl.jpg[{fullWidth},{fullHeight}]
+
+Once the wires are soldered onto the backplane connect the wires to the XT-60 connector. Make sure to get the polarity right!
+
+image::sldwrtocn.jpg[{fullWidth},{fullHeight}]
+
 === Placing the back-plan covers
 To place the the cover make sure all the PI nodes are powered off. And no 5V is applied to the chassis.
 
 The easiest way to place the backplane covers is to place the cover, back-plane by back-plane: 
 
-- Unscrew the four temporarily screws
+Unscrew the four temporarily screws:
+
+image::uscbckrp.jpg[{fullWidth},{fullHeight}]
+
 - Place the backplane cover
-- Use 4x M3x30 screws to fasten the backplane cover
+- Use 4x M3x40 screws to fasten the backplane cover
 
 Repeat this for every back-plane

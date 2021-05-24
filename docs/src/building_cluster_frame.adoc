@@ -7,8 +7,8 @@ To build 1 cluster frame, the following is needed:
 
 - 1x backplate
 - 2x front-plate
-- 2x connecting rod left
-- 2x connecting rod right
+- 2x connecting rod left (or with two nodes 2x M3 press insert and 2x M3x50)
+- 2x connecting rod right (or with two nodes 2x M3 press insert and 2x M3x50)
 - 1x back-plane PCB
 - 8x Brass press insert M3
 - 4x M3x10
@@ -100,6 +100,19 @@ While keeping the PI tray into place, secure the PI tray with 2x M3x10 in place.
 
 Once the connectors are aligned for both of the PI trays, tighten the screws of the back-plane, so that the back-plane is held in to place. The last step is to solder the pins onto the backplane. Once the pins are soldered, the PI trays could be loosened by unscrewing the two front screws. The PI trays should not slide out of the frame, and by reinserting the PI frame, the connectors should align with the back-plate connectors without any problems. 
 
+=== Attach the frames together
+Once the backplane is placed, and the PI nodes are fitting perfectly, and can be slide in and out , the frame can be screwed together. This is done by using M3 Rod which needs to be cut to length. This can be done by using a dremel tool for example. Measure the length of of the rod to cut, and cut four equal sizes. Push the rod trough the holes in one of the corners of the frame. Once the rod is pushed all the way trough, place a M3 nut on both side, and tighten up the nuts, but not to tight. Replace this process for the rest of the three corners. 
+
+When using only two nodes, it's possible to use 4 press M3 inserts and 4x M3x50. Note however that expanding the frame is no longer possible. To connect the frames with screws: 
+
+image::frwpris.jpg["place the press inserts",{fullWidth},{fullHeight}]
+
+screw the frames together: 
+
+image::scfrtg.jpg["srew fram together",{fullWidth},{fullHeight}]
+
+If however the frame must be extensible, it's better to measure the needed length of four M3 rods, and use 4x M3 nuts to bolt the frame together.
+
 === Power supply considerations
 Before connecting the backplane, and bringing the PI cluster up and running, there is the small matter of getting a power supply. The most likely this will be a Switch Mode Power Supply (SMPS). The things to consider for buying a SMPS are the following: 
 
@@ -111,6 +124,7 @@ Before connecting the backplane, and bringing the PI cluster up and running, the
 When building a one frame cluster (thus two PI nodes) the SMSPS doesn't have to be very beefy. However if you want to expand the PI Cluster Frame from two PI's to let's 4 or of 8 or even 10 PI's it might be better to buy a PSU which can support this expansion. To give an idea, for a 10 node cluster with PI3's I use a 5V 26A SMPS (Mean Well RS-150-5) .
 
 See the the section below on the Amperes and requirements.
+
 === Connecting the backplane
 The backplane connects to a 5V power supply, and distributes the power to all the nodes in the cluster. When using more then one frame (thus more then two PI tray's) the backplane must be connected together. This can be done in two ways: 
 
@@ -138,30 +152,12 @@ The moral of the story is:
 - Connect the backplanes in series. This might be more challenging to connect all the wires to one central connector. However this decreases the voltage drop
 - Use a XT60 as a central connector to supply the main 5V. These connectors are able to handle the amount of current.
 
-When connecting the backplanes in parallel (not recommended):  
+When connecting the backplanes in series (not recommended):  
 
 - make sure to use thick wires.
 - If possible connect the backplanes with two wires, the decrease the voltage drop.
 
 The connections of the back-plane connect to one XT60 connector which is mounted on a back-plane cover. See the section <<Attaching the backplane cover>>
-
-=== Testing the PI Cluster Frame
-Once the backplane are connected, perform the following test before applying power: 
-
-- Remove all PI trays (PI nodes) from the chassis 
-- With a Multimeter in continuity mode check for shorts on the back-plane. For example: start by testing between the pins of the XT60 connector
-- Check each back-plane for shorts. 
-- Next when no shorts are detected (or all are fixed) without any PI node in the cluster chassis, apply 5V to the cluster chassis
-- Measure the voltage on each backplane 5V connector
-
-When everything looks okey: 
-
-- Use a lab power supply (if possible and limit the current to 600mA)
-- Insert one PI tray into the chassis. 
-- Apply power and see if the PI node starts without problems. 
-- Measure the voltage on the other pins on the back-plane
-
-Once everything is okey insert the second PI node, let it boot. And after each successfully power up of a node, insert the next PI node until the whole chassis is populated and all nodes are booted. 
 
 
 

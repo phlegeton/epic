@@ -42,7 +42,7 @@ Once the LED Board is correctly placed, use 2x M3x6 bolt to secure the board in 
 
 image::pitalb.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
 
-=== Attach the FAn to the FAN holder
+=== Attach the FAN to the FAN holder
 The FAN should be placed correctly on to the FAN holder. This means the FAN should suck in cool air, and blow the air against the CPU. 
 
 TIP: To determine in which way the FAN spins, connect the 5V FAN to a 5V PSU, and use a small piece of paper. Hold this small piece of paper close to the FAN, while it's spinning. If the piece of paper moves towards the FAN, the air is sucked in. If however the piece of paper is blown away from the FAN, the FAN is blowing air out. 
@@ -69,11 +69,17 @@ image::pitist.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
 
 Insert the 4x 3D printed stand-offs and 4x bolts.
 
+If the cable connecting the RGB LED's is quite long, it can be folded like: 
+
+image::frgbc.jpg[Power cable,{fullWidth},{fullHeight}] 
+
+Note however when using a long cable, and using heat-sink on the bottom of the PI, the cable might not fit perfectly.
+
 Place the whole assembly of the Raspberry PI and the Pi Cluster HAT onto the PI Tray, align the holes with the four bolts.  Press the PI CLuster HAT down onto the Raspberry PI (if you not had done this already) 
 
 Screw the assembly into place. Make sure the power cable on the back is not between the Raspberry PI and the SD card holder, by making sure the power cable is guided along the corner:
 
-image::pwcat.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+image::pwcat.jpg[Power cable,{fullWidth},{fullHeight}]
 
 Connect all the wires: 
 
@@ -86,14 +92,14 @@ The last step is to attach the front panel to the PI Tray using 2x M3x5 bolt:
 
 Slide the front panel onto the PI tray:
 
-image::pitatfrp.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+image::pitatfrp.jpg[Place front panel,{fullWidth},{fullHeight}]
 
-Secure the front panel into place with two screws:
+Secure the front panel into place with two screws, one at each side:
 
-image::pitsfp.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+image::pitsfp.jpg[secure front panel{fullWidth},{fullHeight}]
 
 
 The finished PI Tray should look like this:
 
-image::fpiha.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+image::fpiha.jpg[Finished PI tray,{fullWidth},{fullHeight}]
 

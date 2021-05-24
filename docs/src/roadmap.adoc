@@ -6,9 +6,9 @@ include::./{includesdir}/document_settings.adoc[]
 Currently the focus of the project is to get a minimal full working PI Cluster Frame. This means a few features are postponed, or new ideas are being put on a wishlist. To keep track of these postponed features and wishes, they are listed here. Implementing these features means that components of the PI Cluster Frame are going to be changed. And there is no intention to try to keep things backward compatible. This will slow the project down, and is almost not doable.
 
 == Features postponed
-
 - Be able to power down nodes, and keep the power status, even when the whole cluster is powered down. Implementing means possible change to back-plane. 
 
 == Wish list
 - Be able to connect a serial terminal to each cluster node. Implementing this causes the back-plane PCB to change, and the front bezel of PI Tray 
+- Have different front bezels so one can use a OLED display instead of RGB LED's (for example)
 

@@ -6,13 +6,18 @@ The PI Cluster HAT PCB contains SMD parts and also Through Hole parts. It may re
 
 Per PCB you need: 
 
-- 9x SDM 0805 330 Ohm resistor
-- 2x SMD 0805 3.9K Ohm resistor
-- 1x SMD 0805 1K Ohm resistor
+- 9x SDM 0805 330 Ohm resistor (R2 - R10)
+- 2x SMD 0805 3.9K Ohm resistor (R12,R13)
+- 1x SMD 0805 1K Ohm resistor (R11)
+- 1x SMD 0805 100nF capacitor (C1)
+- 1x BAS 16 diode (might not required)
 - 1x 2 Amp SMD 1206 fuse 63V 2A Slow blow
-- 1x CAT 24c32 EEProm
+- 1x CAT 24c32 EEProm (not required)
 - 1x NDS351N MOSFET (SMD sot-23-3) 
-- 2x 10 pins JST XH cable connectors (these are available already crimped to a cable)
+- 1x 40 pins GPIO header
+- 1x 6 pins box header (for the I2C breakout connector). (not required)
+- 1x 2 pins 2.54 male connector to program the EEPROM (However this also can be a piece of solid wire, so below)
+- 1x 2 pins 2.54 female jumper (However if a wire link is used, not needed)
 
 Depending on how you connect everything to the PI Cluster HAT:
 
@@ -21,17 +26,23 @@ Depending on how you connect everything to the PI Cluster HAT:
 
 When using connectors you need the following:
 
-- 1x 40 pins GPIO header
-- 1x  10 pins JST XH 90 degree angle PCB connector
+- 1x 10 pins JST XH 90 degree angle PCB connector
 - 2x 2 pins JST XH 90 degree angle PCB connector
-- 1x 6 pins box header
 
+NOTE: These connectors are often called "JST XH 2.54". However the pitch is really 2.5. This is normally not a problem, and fits in a 2.54 pitch.
 
 The pro of soldering the wires directly to the PCB is the low profile. The downside is of course that when removing or when needing to replace a part, the wires needs to be de-soldered. 
 
 When using connectors, all the connections can easily be disconnected. Which makes maintenance much easier. However, it costs more.
 
-Whichever solution you choose, it doesn't matter, as long as the profile of the PCB is as low as possible.
+Whichever solution you choose, it doesn't matter, as long as the profile of the PCB is as low as possible. As a guideline: nothing should stick out above the FAN. When using for example straight connectors, the profile get to high, and the PI tray won't be able to slide in or out of the PI Cluster Frame. 
+
+=== Enable EEPROM write mode
+To be able to program the EEPROM, the EEPROM must be writeable. To do this the pins on J6 ('WR-E') must be shorted. This can be done by soldering a 2 pins 2.54 male connector. Or simply by soldering a wire link. 
+
+To pro of using two pins 2.54 male connector is that it's easy to place a jumper across the pins, which is easily be removed once programming of the EEPRON is done. However the 2 pins are somewhat in the way of the FAN connector, making it a bit trickier to connect the FAN. 
+
+By using a wire link, the pro is that the FAN is easy to connect, however, once the link is cut, it might be more difficult to short the link again, to reprogram the EEPROM.
 
 === Soldering the PCB
 When starting to solder the PCB, first start with the SMD components:
@@ -40,12 +51,13 @@ image::pihatassmd.jpg[Components needed for PCB assembly{fullWidth},{fullHeight}
 
 Next solder the JST XH 2.54 haeders onto the PCB
 
-image::pihatascnt.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+image::pihatascnt.jpg[Solder the connectors,{fullWidth},{fullHeight}]
 
 
-As a last step solder the 6 pins 2.54mm header, and then the as the last component the 2x20 GPIO pin header at the other side of the PCB. The final PCB is shown below. In a last step the FLUX must be cleaned up from the PCB. But apart from that, this is how the finished PCB should look like.
+As a last step solder the 6 pins 2.54mm header, and then the as the last component the 2x20 GPIO pin header at the other side of the PCB. 
 
-image::pihataslcnt.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
+Tip for soldering the GPIO header: To make sure soldering the header straight, to PI Cluster HAT can be temporarily mounted onto a Raspberry PI, using the plastic mount stand-offs.   
 
-NOTE: During development, the PCB version 2.0 (Hades Edition) a few bodge wires where needed, to let the MOSFET do it's work. Also note that the test points are shorted together, allowing the EEPROM te be written. 
+The final PCB is shown below. In a last step the FLUX must be cleaned up from the PCB. But apart from that, this is how the finished PCB should look like.
 
+image::pihataslcnt.jpg[Final PCB assembly,{fullWidth},{fullHeight}]

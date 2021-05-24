@@ -1,18 +1,22 @@
 :imagesdir: assets/images
 :includesdir: include
 
-== Featues of the PI Cluster HAT
+== Features of the PI Cluster HAT
 The PI Cluster HAT provides the following features:
 
 - 1x GPIO PWM Controllable FAN
 - 3x GPIO PWM Controllable RGB LED's
 - 5V Power Distribution
 - 3V Power Distribution
-- 1x Programmable I2C EPROM
+- I2C distribution
+- 1x Programmable I2C EEPROM
 - 1x I2C Breakout
+- Provides J6 ('WR-E') to program the EEPROM
+
+The PI Cluster HAT distributes the 5V , 3.3V and I2C to the backplane. Although it's called a PI Cluster HAT, technically it's not a official PI HAT. This because the PI Cluster HAT doesn't met all the requirements. For instance, it doesn't have rounded corners, the hole sizes are not correct. However this is done with a reason, so it's fit better in the cluster frame, and makes assembly slightly easier, by taking 3D printer margins into account (for example) 
 
 === PI Cluster HAT Theory of Operation
-This section explains the features of the PI Cluser HAT in more detail.
+This section explains the features of the PI Cluster HAT in more detail.
 
 The PI Cluster HAT is designed with the PI HAT regulations and requirements in mind. However, some requirements are not met. In this section, this is addressed as well.
 
@@ -26,18 +30,12 @@ To protect the MOSFET a fly-back diode can be added. However during testing, thi
 === 5V Power
 The second most important task of the PI Cluster HAT is to distribute power to the PowerBoard, making it possible to connected a Raspberry PI to a back-plane.
 
-The PI HAT design rules, require a polarity protection diode. This diode is not implemented for the following reasons:
-
-- The PI CLuster HAT is mounted on a PI Tray, which is placed inside a Cluster frame, the power pins are not accessible.
-- A Diode will cause a voltage drop, even when using a Schottky diode, which is problematic when distributing 5V across a back-plane
+The PI HAT doesn't provide a diode to protect against reverse voltage polarity. So when testing the PI Cluster HAT outside the PI Cluster frame, make sure you wire it up correctly! The reason for not adding a diode, is to prevent the voltage drop caused by a diode.
 
 The only risk of damage the Raspberry PI by reversing the 5V polarity, is when:
 
 - Testing the PI node outside the cluster frame.
 - When the power board or power wires are assembled incorrectly.
-
-However a power drop of more then 0.2V, can cause instability problems, rendering each cluster node useless. To provide some protection, the + 5V power line is protected by a 63V 2A fuse.
-
 
 === GPIO Features
 Futhermore the PI Cluster HAT provides a means of using some of the GPIO pins/features, which normally won't be accessible once the Raspberry PI is inside the cluster frame. 
@@ -49,14 +47,14 @@ The RGB LED's can for instance be used as a power on LED, Temperature status, or
 The PI Cluster HAT Provides current limiting resistors, to protect the GPIO PIN's and the RGB LED's as well.
 
 ==== I2C feature
-The Cluster PI HAT also provides a one breakout I2C connector, so the for each node the I2C bus can be used, since the I2C bus interconnects on the back-plane.
+The PI Cluster had provides a breakout connector for I2C, while I2C is also distributed across the backplane. The breakout connector is not used at the moment, but it could be used for hooking up a small OLED display for example (which means adjusting the the PI CLuster hardware). 
 
 ==== I2C EEPROM
-The Raspberry PI provides separate I2C GPIO pins to control a I2C EEPROM, The PI CLuster HAT includes this EEPROM is as well. The EEPROM is programmed to provision the GPIO initial status, and controls the Power On LED. The contents of the EEPROM can be overwritten, by reprogramming the EEPROM, and writing an own overlay.
+The Raspberry PI provides an *separate* I2C bus from the GPIO pins to control a I2C EEPROM. This I2C bus *MUST* only be used for the I2C EEPROM! The PI CLuster HAT includes this EEPROM is as well. The EEPROM is programmed to provision the GPIO initial status, and controls the Power On LED. The contents of the EEPROM can be overwritten, by reprogramming the EEPROM, and writing an own overlay.
 
 NOTE: The EEPROM is not necessarily for the operation of the PI Cluster HAT. The Power on LED is controlled by the EEPROM at boot time. However this can be done by an external script as well. 
 
 The EEPROM has the required pull down resistors, as well as test points to control the Read and Write (R/W) signals.
 
-NOTE: To be able to write to the EEPROM, the test-points TP1 must be shorted.
+NOTE: To be able to write to the EEPROM, the pins of J6 ('WR-E') must be shorted. Once the EEPROM is written, the short between the pins *SHOULD* be removed.
 

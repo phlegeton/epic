@@ -5,6 +5,7 @@ NOTE: List is provided AS IS. List may contain errors.
 Parts needed to build 2 Pay tray's and 1 PI Cluster frame (which holds 2 PI's)
 
 ==== Hardware
+- 2x Raspberry PI 3 or 4
 - 8x M2.5 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT
 - 18x M3 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT
 - 8x M2.5x25
@@ -68,8 +69,9 @@ One PI cluster Frame holds 2 PI trays
 ==== Hardware
 - 12x M3 THREADED SOLID BRASS BARBED INSERTS FOR PLASTIC,PRESSFIT
 - 4x M3x10
-- 4x M3x25
+- 4x M3x40
 - 4x M3 threaded rod 
+- 4x M3 nut
 
 NOTE: rod length based on the number of PI frames. Max 19" for 5 PI frames (10 nodes) For 1 PI frame (which holds 2 PI nodes) rod length is +/- 90mm
 
