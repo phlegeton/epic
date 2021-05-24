@@ -9,11 +9,9 @@ The current PI Cluster version is still in the development phase. This means the
 NOTE: Currently the PI Cluster frame (version: {current_version}) is at a point that it is useful. There are however some issues that needs to be addressed:
 
 . The back-plane connectors doesn't align properly with the Raspberry PI
-. The PI Cluster HAT hardware problem, causing the MOSFET to be none functional
-. Polarity markings on some PCB silkscreen are missing, or are misplaced. 
-. Not easy to enable EEPROM write
-. The documentation is not fully completed yet. 
+. The documentation is not fully completed yet or contains errors. 
 . When using a PI4 it's difficult to remove the Ethernet cable.
+. The rack-mount ears or not fully developed and tested.
 
 :sectnums:
 
@@ -24,39 +22,20 @@ Severity: *HIGH* : Currently it is not advised to manufacture the PI Cluster bac
 
 *SOLVED* Issue is resolved in the current version *{current_version}* The alignment of the connectors is not perfect yet, but with the procedure explained in the  <<Attaching the back-plane>> section the alignment shouldn't be a problem. 
 
-=== The PI Cluster HAT hardware problem, causing the MOSFET to be none functional
-In the version: *{development_version_beta}* of the PI Cluster HAT the MOSFET is wired wrong. Causing the cooling FAN always to spin at full speed. The fix is already applied, and push to the repository. However when using the *{development_version_beta}* there is an easy fix, by cutting two traces on the PCB, and solder two bodge wires:
-
-image::pichfix.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
-
-Severity: *Medium* Issue is  solved and tested in the current version {current_version}
-
-=== Polarity markings on some PCB silkscreen are missing or are misplaced
-Overall there is a lot of work to be done to get the silkscreens of the PCB to have prober markings. In the next versions this issue is going to be addressed.
-
-Severity: *LOW* This is just an inconvenience, care should be taken when soldering wires / connectors for example. 
-
-Solved in the current version {current_version}
-
-=== Not easy to enable EEPROM write
-To be able to program the EEPROM, J9 pins needs to be shorted together. This now requires a 0 ohm 0805 SMD resistor, ar a small piece of wire. This needs to be fixed, so a jumper can be placed.  
-
-Severity: *LOW* This is just an inconvenience. 
-
-Solved in the current version {current_version}
-
-=== The documentation is not fully completed yet
-The documentation is becoming more and more complete, however it still needs a lot of work. 
+=== . The documentation is not fully completed yet or contains errors.
+The documentation is becoming more and more complete, however it still needs a lot of work. At this point most of the assembly instructions should be complete. However the document itself is not tested fully, and may contain errors.
 
 Severity: *HIGH* Documentation is required to be able to build the PI Cluster Frame. 
 
-Solved in the current version {current_version}
-However the documentation can (and properly will) contains errors.
+In the {current_version} all of the assembly steps are documented, however the documentation can (and properly will) contains errors, since it's not tested fully.
 
 === When using a PI4 it's difficult to remove the Ethernet cable
 When a Pi4 is used in a Pi Tray the Ethernet port is on the right side instead of the left side. On the left side there is a small cut-out, so it's easier to remove a ethernet cable. However this cut-out is not available on the right side. Making it difficult to detach a ethernet cable.
 
 Severity: *LOW*  This is just an inconvenience, and the front bezel needs a redesign anyway. 
+
+=== The rack-mount ears or not fully developed and tested
+The rackmount ears needs to be developped futher and to be tested. At this moment it's not recommended to place the cluster frame into a 19" rack.
 
 :sectnums!:
 
