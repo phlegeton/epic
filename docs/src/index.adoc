@@ -10,10 +10,14 @@ ifdef::env-github[]
 endif::[]
 :toc:
 :toc-placement!: 
-= Main Index 
+= Extensible PI Cluser Frame - Hardware guide
 Hades <hades@spacebugs.nl>
 v1.0, 2020-28-11
 include::./{includesdir}/document_settings.adoc[]
+
+image::crnex.jpg[Two node cluster,{fullWidth},{fullHeight}]
+
+== Main index
 
 toc::[]
 
