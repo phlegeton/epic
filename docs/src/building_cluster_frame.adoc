@@ -107,7 +107,8 @@ When using only two nodes, it's possible to use 4 press M3 inserts and 4x M3x50.
 
 image::frwpris.jpg["place the press inserts",{fullWidth},{fullHeight}]
 
-screw the frames together
+screw the frames together: 
+
 image::scfrtg.jpg["srew fram together",{fullWidth},{fullHeight}]
 
 If however the frame must be extensible, it's better to measure the needed length of four M3 rods, and use 4x M3 nuts to bolt the frame together.
