@@ -42,7 +42,7 @@ Once the LED Board is correctly placed, use 2x M3x6 bolt to secure the board in 
 
 image::pitalb.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
 
-=== Attach the FAn to the FAN holder
+=== Attach the FAN to the FAN holder
 The FAN should be placed correctly on to the FAN holder. This means the FAN should suck in cool air, and blow the air against the CPU. 
 
 TIP: To determine in which way the FAN spins, connect the 5V FAN to a 5V PSU, and use a small piece of paper. Hold this small piece of paper close to the FAN, while it's spinning. If the piece of paper moves towards the FAN, the air is sucked in. If however the piece of paper is blown away from the FAN, the FAN is blowing air out. 
@@ -68,6 +68,12 @@ Anyway: Start by pressing the PI Cluster HAT somewhat down on the 2x20 male head
 image::pitist.jpg[Components needed for PCB assembly,{fullWidth},{fullHeight}]
 
 Insert the 4x 3D printed stand-offs and 4x bolts.
+
+If the cable connecting the RGB LED's is quite long, it can be folded like: 
+
+image::frgbc.jpg[Power cable,{fullWidth},{fullHeight}] 
+
+Note however when using a long cable, and using heat-sink on the bottom of the PI, the cable might not fit perfectly.
 
 Place the whole assembly of the Raspberry PI and the Pi Cluster HAT onto the PI Tray, align the holes with the four bolts.  Press the PI CLuster HAT down onto the Raspberry PI (if you not had done this already) 
 
