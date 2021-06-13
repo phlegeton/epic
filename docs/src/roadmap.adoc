@@ -1,6 +1,8 @@
+////
 :imagesdir: assets/images 
 :includesdir: include
 include::./{includesdir}/document_settings.adoc[]
+////
 
 == Roadmap
 Currently the focus of the project is to get a minimal full working PI Cluster Frame. This means a few features are postponed, or new ideas are being put on a wishlist. To keep track of these postponed features and wishes, they are listed here. Implementing these features means that components of the PI Cluster Frame are going to be changed. And there is no intention to try to keep things backward compatible. This will slow the project down, and is almost not doable.

@@ -1,19 +1,13 @@
-:safe-mode-level: 0
-:imagesdir: assets/images
-:includesdir: include
-ifdef::env-github[]
-:tip-caption: :bulb:
-:note-caption: :information_source:
-:important-caption: :heavy_exclamation_mark:
-:caution-caption: :fire:
-:warning-caption: :warning:
-endif::[]
 :toc:
 :toc-placement!: 
 = Extensible PI Cluser Frame - Hardware guide
 Hades <hades@spacebugs.nl>
 v1.0, 2020-28-11
-include::./{includesdir}/document_settings.adoc[]
+//include::./{includesdir}/document_settings.adoc[]
+
+
+//include::./include/documents_settings.adoc[]
+include::include/document_settings.adoc[]
 
 image::crnex.jpg[Two node cluster,{fullWidth},{fullHeight}]
 

@@ -1,9 +1,11 @@
 
-
 == Preparing the PI Tray
+////
 :imagesdir: assets/images
 :includesdir: include
 include::./{includesdir}/document_settings.adoc[]
+////
+include:include/documents_settings.adoc[]
 The PI Tray is responsible for holding several components:
 
 - The Raspberry PI itself

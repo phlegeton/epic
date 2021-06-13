@@ -1,6 +1,7 @@
+////
 :imagesdir: assets/images
 :includesdir: include
-
+////
 == Featues of the LED Board
 The LED Board provides the following features:
 

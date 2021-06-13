@@ -1,7 +1,8 @@
+////
 :imagesdir: assets/images 
 :includesdir: include
 include::./{includesdir}/document_settings.adoc[]
-
+////
 == Assemble the PI Tray
 Do you remember that a long, long time ago you prepared the PI Tray at the very beginning of this Hardware manual ? Well, now is the time to blow the dust of it, and start assembling the PI Tray. 
 

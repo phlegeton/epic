@@ -1,7 +1,8 @@
+////
 :imagesdir: assets/images 
 :includesdir: include
 include::./{includesdir}/document_settings.adoc[]
-
+////
 
 == Current issues
 The current PI Cluster version is still in the development phase. This means there are some issues. So before building the PI Cluster Frame, you may take a look at the current known issues. However the cluster frame itself is fully working. 

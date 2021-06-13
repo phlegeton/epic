@@ -1,7 +1,9 @@
 == Building the PI Cluster HAT
+////
 :imagesdir: assets/images 
 :includesdir: include
 include::./{includesdir}/document_settings.adoc[]
+////
 The PI Cluster HAT PCB contains SMD parts and also Through Hole parts. It may require some skills to solder these SMD parts, but it shouldn't be too hard to do, since the SMD package size is rather large (SOT-23-3 and 0805). 
 
 Per PCB you need: 

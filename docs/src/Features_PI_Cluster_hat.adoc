@@ -1,6 +1,7 @@
+////
 :imagesdir: assets/images
 :includesdir: include
-
+////
 == Features of the PI Cluster HAT
 The PI Cluster HAT provides the following features:
 
