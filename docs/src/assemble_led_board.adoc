@@ -1,8 +1,9 @@
 == Assemble the LED Board
+////
 :imagesdir: assets/images
 :includesdir: include
 include::./{includesdir}/document_settings.adoc[]
-
+////
 The assembly of the LED Board is perhaps the most tricky one. Since space on the LED Board is quite limited, the footprint of the RGB LED's are somewhat "spaced close together". You get this when trying to solder the RGB LED's, without trying to bridge the pins together. 
 
 To assemble the LED Board, the following is needed:

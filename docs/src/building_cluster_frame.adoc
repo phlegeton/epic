@@ -1,8 +1,10 @@
 
-== Building the frame 
+== Building the frame
+////
 :imagesdir: assets/images 
 :includesdir: include
 include::./{includesdir}/document_settings.adoc[]
+////
 To build 1 cluster frame, the following is needed:
 
 - 1x backplate

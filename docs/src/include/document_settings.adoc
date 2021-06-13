@@ -2,3 +2,14 @@
 :fullHeight: 150 
 :development_version_beta: 0.99 (Internal release Hades 2.0)
 :current_version: 1.0
+:safe-mode-level: 0
+//:imagesdir: assets/images
+:imagesdir: ../images
+:includesdir: include
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]

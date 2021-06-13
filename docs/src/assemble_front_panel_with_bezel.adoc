@@ -1,7 +1,9 @@
 == Assemble the front panel and bezel
+////
 :imagesdir: assets/images
 :includesdir: include
 include::./{includesdir}/document_settings.adoc[]
+////
 
 To assemble the front panel and bezel with 3 light pipes, the following is needed:
 

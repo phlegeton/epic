@@ -1,6 +1,7 @@
+////
 :imagesdir: assets/images
 :includesdir: include
-
+////
 == Features of the Power Board
 The power board PCB provides the following features on a small footprint:
 

@@ -1,10 +1,11 @@
 
 
 == Assemble the PowerBoard
+////
 :imagesdir: assets/images
 :includesdir: include
 include::./{includesdir}/document_settings.adoc[]
-
+////
 Materials needed:
 
 - 1x Power Board PCB
