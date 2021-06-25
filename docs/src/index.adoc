@@ -25,6 +25,8 @@ include::current_issues.adoc[]
 
 include::roadmap.adoc[]
 
+include::modules.adoc[]
+
 include::3d_printing_the_parts.adoc[]
 
 include::preparing_pi_tray.adoc[]

@@ -1,0 +1,9 @@
+== Installing the OLED front Display
+The OLED display front can be attached to the PI tray in the same way as the original front. The OLED display to use is: OLED Display 0,91 inch 128x32 with a SSD1306 driver. This allows the use of the Adafruit OLED library for the Raspberry pi. 
+
+To connect the display connector J5 can be used. The connections are: 
+
+* pin 1 GND
+* pin 2 3.3V
+* pin3 SCL
+* pin4 SDA

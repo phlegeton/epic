@@ -1,4 +1,9 @@
 == 3D printing the parts
+
+=== Print material needed
+To print the parts regular PLA can be used. To print the light-pipes transparent PLA is needed.
+
+=== Printing support
 Some of the parts have support parts, these can be recognized by their yellow color.  Other parts needs support as well during printing, but don't have support built-in. To make sure that such parts are printed correctly, make sure that support is enabled in the slicer. For instance in Cura make sure to enable "support from print bed"
 
 Parts with build in support have a gap of 0.15mm which should be enough to break away the support part easily. However, did may depend on your 3D printer. If needed adjust this to a wider gap.

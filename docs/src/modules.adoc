@@ -1,0 +1,6 @@
+== Modules
+The whole design idea is to have a modular design. In the repository under the extra directory there is a modules directory. Currently only a front-end module exist. The idea of this directory is that its possible to add "third party" modules. For example it could be possible that someone comes up with parts for an alternative cluster frame. The modules directory can be used to place these modules. Which means the rest of the original cluster frame in the repository can be left untouched.
+
+Each module directory must include a doc directory, explaining how to use / build etc. 
+
+The current alternative front-end module allows one to add a oled display to the front-end instead of the RGB leds. 
